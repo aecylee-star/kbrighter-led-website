@@ -1,0 +1,13 @@
+.next/
+node_modules/
+out/
+dist/
+*.tsbuildinfo
+.env*
+!.env.example
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+preview.html
+public/products/2835-smd-led/
