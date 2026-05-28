@@ -38,6 +38,12 @@ export const productCategories: ProductCategory[] = [
         specs: ["2.8 x 3.5 mm", "IF 60mA option", "White and mono-color options"]
       },
       {
+        name: "2835 0.5W SMD LED",
+        description: "Higher lumen 0.5W 2835 SMD LED for lighting replacement, sign board backlight and OEM lighting projects.",
+        href: "/products/smd-led/2835-0-5w-smd-led",
+        specs: ["2.8 x 3.5 x 0.70 mm", "IF 150mA", "55-85 lm by CCT/CRI bin"]
+      },
+      {
         name: "3528 SMD LED",
         description: "Compact SMD LED package for indicators, decorative lighting, display backlight and electronics assemblies.",
         href: "/products/smd-led",

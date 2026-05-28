@@ -16,12 +16,14 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "2835 SMD LED 0.2W | KINGBRIGHT High Efficiency LED Package",
+  title: "2835 0.5W SMD LED Manufacturer | KINGBRIGHT",
   description:
-    "KINGBRIGHT 2835 SMD LED 0.2W, IF 60mA, VF 2.6-3.0V, 120° viewing angle, Ra70/Ra80/Ra90 and 2700K-6500K CCT options for lighting and backlight applications.",
+    "KINGBRIGHT 2835 0.5W SMD LED, product code 9.2835W3V21G-J03, IF 150mA, VF 2.8-3.4V, 120 degree viewing angle, Ra70/Ra80/Ra90 and 2700K-6500K CCT options.",
   keywords: [
-    "2835 SMD LED",
+    "2835 0.5W SMD LED",
     "SMD2835 LED",
+    "2835 LED 150mA",
+    "2835 0.5W LED manufacturer",
     "2835 LED manufacturer",
     "2835 white SMD LED",
     "surface mount LED supplier",
@@ -29,46 +31,51 @@ export const metadata: Metadata = {
     "LED panel light component"
   ],
   openGraph: {
-    title: "2835 SMD LED 0.2W | KINGBRIGHT High Efficiency LED Package",
+    title: "2835 0.5W SMD LED Manufacturer | KINGBRIGHT",
     description:
-      "KINGBRIGHT 2835 SMD LED 0.2W, IF 60mA, VF 2.6-3.0V, 120 degree viewing angle, Ra70/Ra80/Ra90 and 2700K-6500K CCT options.",
-    url: "/products/smd-led/2835-smd-led",
+      "KINGBRIGHT 2835 0.5W SMD LED with IF 150mA, VF 2.8-3.4V, 120 degree viewing angle, Ra70/Ra80/Ra90 and 2700K-6500K CCT options.",
+    url: "/products/smd-led/2835-0-5w-smd-led",
     type: "website"
   }
 };
 
 const specs = [
-  ["Product Code", "9.2835XXV22XA_C32_CY"],
-  ["Package Size", "2835 SMD package, tolerance ±0.15 mm unless otherwise noted"],
-  ["Forward Voltage", "2.6V min / 3.0V max at IF=60mA"],
-  ["Forward Current", "60mA rated forward current"],
-  ["Pulse Forward Current", "72mA max, 10kHz, duty ratio ≤10%"],
-  ["Power Dissipation", "200mW"],
+  ["Product Code", "9.2835W3V21G-J03"],
+  ["Code Structure", "9.2835XXV21XB-HC4-CY series, 2835 package, 3V class, 1 chip, Ra70/Ra80/Ra90 options"],
+  ["Package Size", "2.8 x 3.5 x 0.70 mm, tolerance +/-0.15 mm unless otherwise noted"],
+  ["Forward Voltage", "2.8V min / 3.4V max at IF=150mA"],
+  ["Forward Current", "150mA rated forward current"],
+  ["Pulse Forward Current", "180mA max, 10kHz frequency, duty ratio <=10%"],
+  ["Power Dissipation", "500mW / 0.5W"],
   ["Color Temperature", "2700K / 3000K / 3500K / 4000K / 4500K / 5000K / 5700K / 6500K"],
-  ["Viewing Angle", "120° at IF=60mA"],
-  ["Luminous Flux", "29-41 lm range by CCT and CRI bin at IF=60mA"],
+  ["Viewing Angle", "120 degrees at IF=150mA"],
+  ["Luminous Flux", "55-85 lm range by CCT and CRI bin at IF=150mA"],
   ["CRI", "Ra70 / Ra80 / Ra90 options"],
-  ["Color Tolerance", "SDCM ≤ 6 at IF=60mA"],
-  ["Reverse Current", "≤10 μA at VR=-5V"],
+  ["Color Tolerance", "SDCM <=6 at IF=150mA"],
+  ["Reverse Current", "10 uA max at VR=-5V"],
   ["ESD", "HBM 2000V"],
-  ["Operating Temperature", "-40°C to +85°C"],
-  ["Storage Temperature", "-40°C to +85°C"],
-  ["Junction Temperature", "125°C max"],
-  ["Thermal Resistance", "33°C/W"],
-  ["Soldering Temperature", "260°C for 10 sec"],
-  ["Packaging", "4K / 16K pcs per reel, subject to actual packing quantity"]
+  ["Operating Temperature", "-40 C to +85 C"],
+  ["Storage Temperature", "-40 C to +85 C"],
+  ["Junction Temperature", "125 C max"],
+  ["Thermal Resistance", "46 C/W"],
+  ["Reverse Voltage", "5V"],
+  ["Soldering Temperature", "260 C for 10 sec"],
+  ["Packaging", "Tape and reel packaging; label includes part number, lot number, IV, VF/IF, CCT/XY, Ra/SD/R9, quantity, date and code"]
 ];
 
 const fluxBins = [
-  ["6500K / 5700K / 5000K / 4500K / 4000K", "Ra70", "39-41 lm"],
-  ["6500K / 5700K / 5000K / 4500K / 4000K", "Ra80", "37-39 lm"],
-  ["6500K / 5700K / 5000K / 4500K / 4000K", "Ra90", "33-35 lm"],
-  ["3500K / 3000K", "Ra70", "37-41 lm"],
-  ["3500K / 3000K", "Ra80", "35-37 lm"],
-  ["3500K / 3000K", "Ra90", "31-33 lm"],
-  ["2700K", "Ra70", "35-37 lm"],
-  ["2700K", "Ra80", "33-35 lm"],
-  ["2700K", "Ra90", "29-31 lm"]
+  ["6500K / 5700K / 5000K", "Ra70", "80-85 lm"],
+  ["6500K / 5700K / 5000K", "Ra80", "75-80 lm"],
+  ["6500K / 5700K / 5000K", "Ra90", "65-70 lm"],
+  ["4000K", "Ra70", "80-85 lm"],
+  ["4000K", "Ra80", "75-80 lm"],
+  ["4000K", "Ra90", "65-70 lm"],
+  ["3500K / 3000K", "Ra70", "75-80 lm"],
+  ["3500K / 3000K", "Ra80", "70-75 lm"],
+  ["3500K / 3000K", "Ra90", "60-65 lm"],
+  ["2700K", "Ra70", "70-75 lm"],
+  ["2700K", "Ra80", "65-70 lm"],
+  ["2700K", "Ra90", "55-60 lm"]
 ];
 
 const features = [
@@ -84,7 +91,7 @@ const features = [
   },
   {
     title: "High Efficiency",
-    text: "0.2W 2835 package delivers up to 41 lm depending on CCT and CRI bin.",
+    text: "0.5W 2835 package delivers up to 80-85 lm depending on CCT and CRI bin.",
     icon: Zap
   },
   {
@@ -147,11 +154,12 @@ const productImages = [
 ];
 
 const faqs = [
-  ["What is the rated current of this 2835 SMD LED?", "The rated forward current is IF=60mA. Pulse forward current is 72mA max under 10kHz frequency and duty ratio ≤10%."],
-  ["What voltage range should engineers design for?", "The datasheet lists forward voltage from 2.6V min to 3.0V max at IF=60mA for this 0.2W 2835 LED."],
+  ["What is the rated current of this 2835 0.5W SMD LED?", "The rated forward current is IF=150mA. Pulse forward current is 180mA max under 10kHz frequency and duty ratio <=10%."],
+  ["What voltage range should engineers design for?", "The datasheet lists forward voltage from 2.8V min to 3.4V max at IF=150mA for this 0.5W 2835 LED."],
   ["Which CCT and CRI options are available?", "Available CCT options include 2700K, 3000K, 3500K, 4000K, 4500K, 5000K, 5700K and 6500K. CRI options include Ra70, Ra80 and Ra90."],
-  ["What luminous flux can buyers expect?", "Flux depends on CCT and CRI bin. The mass production list ranges from 29-31 lm for 2700K Ra90 to 39-41 lm for several Ra70 cool/neutral white bins at IF=60mA."],
-  ["What soldering precautions should be followed?", "Reflow soldering should not be performed more than two times. The recommended soldering temperature is 260°C for 10 seconds, and pressure should not be applied to the silicone surface during heating."],
+  ["What luminous flux can buyers expect?", "Flux depends on CCT and CRI bin. The mass production list ranges from 55-60 lm for 2700K Ra90 to 80-85 lm for several Ra70 cool/neutral white bins at IF=150mA."],
+  ["What soldering precautions should be followed?", "The Pb-free reflow profile lists a 245-260 C peak temperature, 10-30 seconds within 5 C of peak, and total process time up to 480 seconds from 25 C to peak."],
+  ["What packaging information is shown on the label?", "The label includes part number, lot number, luminous flux bin, VF/IF, CCT/XY, Ra/SD/R9, quantity, date and code for production traceability."],
   ["How should opened packages be stored?", "After opening, soldering should be completed as soon as possible, ideally within 12 hours. Remaining material should be sealed or stored at 5-40°C with humidity no more than 30%."],
   ["Is this 2835 LED suitable for flexible light panels?", "The datasheet notes that the bracket is PCT material and may break when bent, so it is not suitable for flexible light panel type lamps."]
 ];
@@ -203,13 +211,13 @@ export default function ProductTemplatePage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "2835 SMD LED",
+    name: "2835 0.5W SMD LED",
     brand: {
       "@type": "Brand",
       name: "KINGBRIGHT"
     },
     description:
-      "KINGBRIGHT 2835 SMD LED 0.2W with IF=60mA, VF 2.6-3.0V, 120° viewing angle, Ra70/Ra80/Ra90 and 2700K-6500K CCT options.",
+      "KINGBRIGHT 2835 0.5W SMD LED with IF=150mA, VF 2.8-3.4V, 120 degree viewing angle, Ra70/Ra80/Ra90 and 2700K-6500K CCT options.",
     category: "SMD LED Components",
     manufacturer: {
       "@type": "Organization",
@@ -227,27 +235,27 @@ export default function ProductTemplatePage() {
       <section className="pd-hero">
         <div className="pd-wrap pd-hero-grid">
           <div>
-            <p className="pd-eyebrow">2835 SMD LED</p>
-            <h1>2835 SMD LED 0.2W for Lighting Replacement and Sign Board Backlight</h1>
+            <p className="pd-eyebrow">2835 0.5W SMD LED</p>
+            <h1>2835 0.5W SMD LED for High Lumen Lighting and Backlight Projects</h1>
             <p className="pd-lead">
-              KINGBRIGHT 2835 SMD LED, code 9.2835XXV22XA_C32_CY, is a high-efficiency
-              0.2W surface mount LED designed for traditional lighting replacement,
+              KINGBRIGHT 2835 0.5W SMD LED, code 9.2835W3V21G-J03, is a high-efficiency
+              surface mount LED with IF=150mA drive current, designed for traditional lighting replacement,
               ordinary lighting, sign board backlight and architectural decorative lighting.
             </p>
             <div className="pd-spec-pills">
-              <span>Code: 9.2835XXV22XA_C32_CY</span>
-              <span>Power: 0.2W / 200mW</span>
-              <span>IF: 60mA</span>
-              <span>VF: 2.6-3.0V</span>
+              <span>Code: 9.2835W3V21G-J03</span>
+              <span>Power: 0.5W / 500mW</span>
+              <span>IF: 150mA</span>
+              <span>VF: 2.8-3.4V</span>
               <span>CCT: 2700K-6500K</span>
               <span>CRI: Ra70 / Ra80 / Ra90</span>
             </div>
             <div className="pd-cta-row">
-              <a className="pd-btn pd-btn-primary" href="#inquiry">Request 2835 LED Quotation <ArrowRight size={18} /></a>
-              <a className="pd-btn pd-btn-ghost" href="#inquiry">Request 2835 Samples</a>
-              <a className="pd-btn pd-btn-ghost" href="#datasheet">Get 2835 Datasheet</a>
+              <a className="pd-btn pd-btn-primary" href="#inquiry">Request 0.5W 2835 Quotation <ArrowRight size={18} /></a>
+              <a className="pd-btn pd-btn-ghost" href="#inquiry">Request 0.5W Samples</a>
+              <a className="pd-btn pd-btn-ghost" href="#datasheet">Get 0.5W Datasheet</a>
               <a className="pd-btn pd-btn-ghost" href="#inquiry">Contact Sales Engineer</a>
-              <a className="pd-btn pd-btn-ghost" href="/products/smd-led/2835-0-5w-smd-led">Compare 2835 0.5W</a>
+              <a className="pd-btn pd-btn-ghost" href="/products/smd-led/2835-smd-led">Compare 2835 0.2W</a>
             </div>
           </div>
           <div className="pd-visual-panel">
@@ -287,10 +295,10 @@ export default function ProductTemplatePage() {
       <section id="specs" className="pd-section pd-white">
         <div className="pd-wrap pd-two">
           <div>
-            <SectionTitle eyebrow="Technical Specifications" title="Real 2835 SMD LED Datasheet Parameters" />
+            <SectionTitle eyebrow="Technical Specifications" title="Real 2835 0.5W SMD LED Datasheet Parameters" />
             <p className="pd-muted">
-              These values are taken from the KINGBRIGHT 2835 LED specification for
-              mass production supply at TA=25°C. Flux and color values should be
+              These values are taken from the KINGBRIGHT 2835 0.5W LED specification for
+              mass production supply at TA=25 C. Flux and color values should be
               confirmed by selected CCT, CRI and bin requirements.
             </p>
             <figure className="pd-tech-image">
@@ -340,7 +348,7 @@ export default function ProductTemplatePage() {
 
       <section className="pd-section">
         <div className="pd-wrap">
-          <SectionTitle eyebrow="Mass Production Bins" title="CCT, CRI and Luminous Flux Options at IF=60mA" />
+          <SectionTitle eyebrow="Mass Production Bins" title="CCT, CRI and Luminous Flux Options at IF=150mA" />
           <div className="pd-bin-table">
             <div className="pd-bin-head">
               <strong>CCT Option</strong>
@@ -404,7 +412,7 @@ export default function ProductTemplatePage() {
         <div className="pd-wrap pd-download">
           <div>
             <p className="pd-label">Datasheet Download</p>
-            <h2>Request the Official 2835 SMD LED Datasheet</h2>
+            <h2>Request the Official 2835 0.5W SMD LED Datasheet</h2>
             <p>
               The datasheet includes package dimensions, coding rules, electro-optical
               characteristics, absolute maximum ratings, mass production list, CIE binning,
@@ -412,6 +420,39 @@ export default function ProductTemplatePage() {
             </p>
           </div>
           <a className="pd-btn pd-btn-primary" href="#inquiry"><Download size={18} /> Get Official Datasheet</a>
+        </div>
+      </section>
+
+      <section className="pd-section pd-white">
+        <div className="pd-wrap">
+          <SectionTitle eyebrow="Packaging & Reflow" title="Tape-and-Reel Packaging and Pb-Free Reflow Profile" />
+          <div className="pd-grid-5">
+            <article className="pd-card">
+              <PackageCheck className="pd-blue" size={30} />
+              <h3>Packaging Information</h3>
+              <p>Tape-and-reel packaging is used for SMT assembly. Labels include part number, lot number, IV, VF/IF, CCT/XY, Ra/SD/R9, quantity, date and code.</p>
+            </article>
+            <article className="pd-card">
+              <Gauge className="pd-blue" size={30} />
+              <h3>Reflow Profile</h3>
+              <p>Pb-free SnAgCu assembly profile with 245-260 C peak temperature and 10-30 seconds within 5 C of peak.</p>
+            </article>
+            <article className="pd-card">
+              <Zap className="pd-blue" size={30} />
+              <h3>Thermal Control</h3>
+              <p>Ramp-up and ramp-down rates should be controlled according to the datasheet profile to protect LED package reliability.</p>
+            </article>
+            <article className="pd-card">
+              <ShieldCheck className="pd-blue" size={30} />
+              <h3>Moisture Handling</h3>
+              <p>After opening, soldering should be completed quickly. Remaining material should be sealed or stored under controlled humidity.</p>
+            </article>
+            <article className="pd-card">
+              <Microscope className="pd-blue" size={30} />
+              <h3>Engineering Review</h3>
+              <p>Confirm solder pad design, thermal path, bin selection and application temperature before mass production.</p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -450,7 +491,7 @@ export default function ProductTemplatePage() {
         <div className="pd-wrap pd-inquiry">
           <div className="pd-inquiry-info">
             <p className="pd-label">Product Inquiry</p>
-            <h2>Send Your 2835 SMD LED Requirement</h2>
+            <h2>Send Your 2835 0.5W SMD LED Requirement</h2>
             <p>
               Share your required CCT, CRI, luminous flux bin, quantity, application,
               storage or soldering requirements and sample request details.
@@ -467,7 +508,7 @@ export default function ProductTemplatePage() {
               <Field label="Email" name="email" placeholder="name@company.com" type="email" />
               <Field label="WhatsApp" name="whatsapp" placeholder="+86 135 3014 4658" />
             </div>
-            <Field label="Product Requirement" name="product_requirement" placeholder="2835 SMD LED 0.2W, CCT, CRI, flux bin, quantity..." />
+            <Field label="Product Requirement" name="product_requirement" placeholder="2835 SMD LED 0.5W, CCT, CRI, flux bin, quantity..." />
             <label>
               Message
               <textarea name="message" placeholder="Please describe CCT, CRI, flux range, application, quantity, sample request, datasheet needs and any soldering or storage requirements." />

@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/products",
     "/products/smd-led/2835-smd-led",
+    "/products/smd-led/2835-0-5w-smd-led",
     "/applications",
     "/about-factory",
     "/download-center",

@@ -120,7 +120,8 @@ export function SiteFooter() {
           title="Downloads"
           links={[
             ["Download Center", "/download-center"],
-            ["2835 Datasheet", "/products/smd-led/2835-smd-led"],
+            ["2835 0.2W Datasheet", "/products/smd-led/2835-smd-led"],
+            ["2835 0.5W Datasheet", "/products/smd-led/2835-0-5w-smd-led"],
             ["Company Profile", "/download-center"],
             ["Certifications", "/download-center"]
           ]}
