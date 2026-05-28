@@ -1,95 +1,95 @@
 import type { Metadata } from "next";
-import { ArrowRight, BadgeCheck, Download, Factory, Gauge, Mail, MessageCircle, Microscope, PackageCheck, ShieldCheck, Sparkles, Zap } from "lucide-react";
+import { ArrowRight, Download, Factory, Gauge, Mail, MessageCircle, Microscope, PackageCheck, ShieldCheck, Sparkles, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "1919 COB LED Manufacturer | KINGBRIGHT",
+  title: "2828 COB LED Manufacturer | KINGBRIGHT",
   description:
-    "KINGBRIGHT 1919 COB LED / CM19XX mirror-aluminum COB LED series with 19 x 19 mm substrate, 16 mm LES, 120 degree viewing angle and 22W / 25W options for spotlights, downlights and commercial lighting.",
+    "KINGBRIGHT 2828 COB LED / CM28XX mirror-aluminum COB LED series with 28 x 28 mm substrate, 22 mm LES, 120 degree viewing angle and 50W / 90W options for high lumen commercial and outdoor lighting.",
   keywords: [
-    "1919 COB LED",
-    "CM19XX COB LED",
+    "2828 COB LED",
+    "CM28XX COB LED",
+    "high power COB LED",
     "COB LED manufacturer",
-    "COB LED for downlights",
-    "COB LED for spotlights",
+    "COB LED for floodlights",
     "commercial lighting COB LED",
     "high lumen COB LED"
   ],
   openGraph: {
-    title: "1919 COB LED Manufacturer | KINGBRIGHT",
+    title: "2828 COB LED Manufacturer | KINGBRIGHT",
     description:
-      "CM19XX 1919 COB LED series with 16 mm LES, 22W / 25W power options, 2700K-6500K CCT ranks and RoHS compliant mirror-aluminum substrate.",
-    url: "/products/cob-led/1919-cob-led",
+      "CM28XX 2828 COB LED series with 22 mm LES, 50W / 90W power options, 2700K-6500K CCT ranks and RoHS compliant mirror-aluminum substrate.",
+    url: "/products/cob-led/2828-cob-led",
     type: "website"
   }
 };
 
 const seriesSpecs = [
-  ["Product Series", "CM19XX"],
-  ["Product Type", "1919 COB LED / mirror-aluminum COB LED"],
-  ["Package Size", "19 x 19 x 1.55 mm"],
-  ["Light Emitting Surface", "16 mm LES"],
+  ["Product Series", "CM28XX"],
+  ["Product Type", "2828 COB LED / mirror-aluminum COB LED"],
+  ["Package Size", "28 x 28 x 1.55 mm"],
+  ["Light Emitting Surface", "22 mm LES"],
   ["Substrate", "Mirror aluminum substrate with silicone package"],
   ["Viewing Angle", "120 degrees"],
-  ["Voltage Options", "36V option listed in the typical electrical table; coding rules also define 9V / 18V / 36V voltage codes"],
+  ["Voltage Options", "36V for CM2850; 54V for CM2890; coding rules also define 9V / 18V / 36V voltage codes"],
   ["CCT Range", "2700K, 3000K, 3500K, 4000K, 4500K, 5000K, 5700K, 6500K color ranks"],
   ["CRI Coding", "Ra70 / Ra80 / Ra90 / Ra95 options by product code"],
   ["ESD", "HBM 4000V"],
-  ["Operating Temperature", "-30 C to +85 C for CM1922; -30 C to +80 C for CM1925"],
+  ["Operating Temperature", "-30 C to +85 C"],
   ["Storage Temperature", "-40 C to +80 C"],
   ["Junction Temperature", "125 C max"],
   ["Hand Soldering", "350 +/-20 C for 3-5 sec"],
-  ["Packaging", "25 pcs x 4; label includes product model, lot no., flux/power, voltage/current, CCT/XY, Ra/SD/R9 and quantity"],
+  ["Packaging", "16 pcs x 4; label includes product model, lot no., flux/power, voltage/current, CCT/XY, Ra/SD/R9 and quantity"],
   ["Compliance", "RoHS compliant"]
 ];
 
 const electricalSpecs = [
   {
-    model: "CM1922",
-    power: "22W",
-    maxPower: "36W",
-    current: "600mA",
-    maxCurrent: "1000mA",
-    pulse: "1200mA",
-    flux80: "3220 lm typ @ 4000K / Ra80",
-    flux90: "2930 lm typ @ 3000K / Ra90",
-    efficacy80: "160 lm/W typ",
-    efficacy90: "140 lm/W typ",
-    thermal: "0.65 C/W"
+    model: "CM2850",
+    power: "50W",
+    maxPower: "75W",
+    current: "1400mA / 36V",
+    maxCurrent: "2000mA",
+    pulse: "2200mA",
+    flux80: "8000 lm typ @ 4000K / Ra80",
+    flux90: "7050 lm typ @ 3000K / Ra90",
+    efficacy80: "155 lm/W typ",
+    efficacy90: "135 lm/W typ",
+    thermal: "0.32 C/W"
   },
   {
-    model: "CM1925",
-    power: "25W",
-    maxPower: "40W",
-    current: "700mA",
-    maxCurrent: "1150mA",
-    pulse: "1300mA",
-    flux80: "3830 lm typ @ 4000K / Ra80",
-    flux90: "3380 lm typ @ 3000K / Ra90",
-    efficacy80: "160 lm/W typ",
-    efficacy90: "140 lm/W typ",
-    thermal: "0.64 C/W"
+    model: "CM2890",
+    power: "90W",
+    maxPower: "90W",
+    current: "1600mA / 54V",
+    maxCurrent: "2400mA",
+    pulse: "2500mA",
+    flux80: "13500 lm typ @ 4000K / Ra80",
+    flux90: "11500 lm typ @ 3000K / Ra90",
+    efficacy80: "150 lm/W typ",
+    efficacy90: "130 lm/W typ",
+    thermal: "0.16 C/W"
   }
 ];
 
 const features = [
   {
-    title: "19 x 19 mm COB Platform",
-    text: "Larger 1919 mirror-aluminum COB structure supports higher lumen commercial lighting modules than smaller COB formats.",
+    title: "28 x 28 mm High Power COB",
+    text: "The larger CM28XX platform supports higher lumen lighting modules for demanding fixture designs.",
     icon: Sparkles
   },
   {
-    title: "22W / 25W Options",
-    text: "CM1922 and CM1925 options support medium-to-high power spotlight, downlight and architectural fixture requirements.",
+    title: "50W / 90W Options",
+    text: "CM2850 and CM2890 support high output commercial, studio, floodlight and outdoor lighting projects.",
     icon: Zap
   },
   {
-    title: "16 mm LES",
-    text: "The 16 mm light emitting surface helps fixture engineers match reflectors, lenses and beam-control designs.",
+    title: "22 mm LES",
+    text: "The 22 mm light emitting surface gives fixture engineers a clear optical reference for reflectors and lenses.",
     icon: Gauge
   },
   {
     title: "High Reliability",
-    text: "The datasheet specifies HBM 4000V ESD sensitivity, 125 C junction temperature and RoHS compliant construction.",
+    text: "The datasheet specifies HBM 4000V ESD sensitivity, RoHS compliance and 125 C maximum junction temperature.",
     icon: ShieldCheck
   },
   {
@@ -99,44 +99,44 @@ const features = [
   }
 ];
 
-const applications = ["Spotlights", "Downlights", "PAR lamps", "LED bulbs", "Restaurant lighting", "Gallery lighting", "Outdoor landscape lighting"];
+const applications = ["Studio lighting", "Floodlights", "High power spotlights", "Downlights", "PAR lamps", "Outdoor area lighting", "Commercial lighting projects"];
 
 const applicationImages = [
   {
-    src: "/images/products/1919-cob-led/1919-cob-led-application-gallery-lighting.jpg",
-    alt: "1919 COB LED application for gallery lighting and high CRI commercial lighting",
-    label: "Gallery / Museum Lighting"
+    src: "/images/products/2828-cob-led/2828-cob-led-application-studio-lighting.jpg",
+    alt: "2828 COB LED application for professional studio lighting and high power panel lights",
+    label: "Studio / Video Lighting"
   },
   {
-    src: "/images/products/1919-cob-led/1919-cob-led-application-downlight.jpg",
-    alt: "1919 COB LED application for downlight and commercial ceiling light fixture",
-    label: "Downlight / Spotlight"
+    src: "/images/products/2828-cob-led/2828-cob-led-application-outdoor-spotlight.jpg",
+    alt: "2828 COB LED application for outdoor spotlight and high power landscape lighting",
+    label: "Outdoor Spotlight"
   },
   {
-    src: "/images/products/1919-cob-led/1919-cob-led-application-floodlight.jpg",
-    alt: "1919 COB LED application for outdoor floodlight and landscape lighting",
-    label: "Outdoor Floodlight"
+    src: "/images/products/2828-cob-led/2828-cob-led-application-area-lighting.jpg",
+    alt: "2828 COB LED application for airport area lighting and high lumen outdoor lighting",
+    label: "Outdoor Area Lighting"
   }
 ];
 
 const faqs = [
-  ["What is the 1919 COB LED product series?", "This page covers the KINGBRIGHT CM19XX 1919 COB LED series, a mirror-aluminum COB LED platform with 19 x 19 mm substrate size and 16 mm light emitting surface."],
-  ["Which power options are available?", "The datasheet lists CM1922 and CM1925 options, corresponding to typical 22W and 25W COB LED configurations."],
-  ["What luminous flux is listed in the datasheet?", "CM1922 is listed at 3220 lm typical at 4000K Ra80 and 2930 lm typical at 3000K Ra90. CM1925 is listed at 3830 lm typical at 4000K Ra80 and 3380 lm typical at 3000K Ra90."],
-  ["What CCT and CRI options can be selected?", "The datasheet includes CCT ranks from 2700K to 6500K, and the product coding rules define Ra70, Ra80, Ra90 and Ra95 options."],
-  ["What applications are recommended?", "The datasheet recommends spotlights, downlights, PAR lamps, bulbs, restaurant lights and outdoor landscape lighting."],
-  ["What should be reviewed before mass production?", "Please confirm power, voltage, CCT, CRI, drive current, heat dissipation, fixture optics and soldering process before mass production."],
+  ["What is the 2828 COB LED product series?", "This page covers the KINGBRIGHT CM28XX 2828 COB LED series, a mirror-aluminum COB LED platform with 28 x 28 mm substrate size and 22 mm light emitting surface."],
+  ["Which power options are available?", "The datasheet lists CM2850 and CM2890 options, corresponding to typical 50W and 90W COB LED configurations."],
+  ["What luminous flux is listed in the datasheet?", "CM2850 is listed at 8000 lm typical at 4000K Ra80 and 7050 lm typical at 3000K Ra90. CM2890 is listed at 13500 lm typical at 4000K Ra80 and approximately 11500 lm typical at 3000K Ra90 based on the listed 130 lm/W efficacy."],
+  ["What voltage options are used?", "The typical table lists 36V for CM2850 and 54V for CM2890. Final voltage code should be confirmed by the selected product code."],
+  ["What applications are recommended?", "The datasheet recommends spotlights, downlights, PAR lamps, bulbs, restaurant lights and outdoor landscape lighting. The high power 2828 format is also suitable for floodlights, studio lighting and large commercial fixtures."],
+  ["What should engineers review before mass production?", "Please confirm power, voltage, CCT, CRI, drive current, heat sink, fixture optics, soldering process and reliability requirements before production."],
   ["Can KINGBRIGHT provide samples and datasheet support?", "Yes. Send your target model, power, CCT, CRI, quantity and application details to request datasheet confirmation and sample support."]
 ];
 
-export default function Product1919CobPage() {
+export default function Product2828CobPage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "1919 COB LED / CM19XX COB LED",
+    name: "2828 COB LED / CM28XX COB LED",
     brand: { "@type": "Brand", name: "KINGBRIGHT" },
     description:
-      "KINGBRIGHT 1919 COB LED CM19XX mirror-aluminum COB series for spotlights, downlights, PAR lamps, bulbs and commercial lighting projects.",
+      "KINGBRIGHT 2828 COB LED CM28XX mirror-aluminum COB series for high lumen spotlights, downlights, floodlights, studio lights and commercial lighting projects.",
     category: "COB LED Components",
     manufacturer: {
       "@type": "Organization",
@@ -154,39 +154,38 @@ export default function Product1919CobPage() {
       <section className="pd-hero">
         <div className="pd-wrap pd-hero-grid">
           <div>
-            <p className="pd-eyebrow">1919 COB LED</p>
-            <h1>1919 COB LED for High Lumen Spotlights, Downlights and Commercial Fixtures</h1>
+            <p className="pd-eyebrow">2828 COB LED</p>
+            <h1>2828 COB LED for High Power Commercial and Outdoor Lighting</h1>
             <p className="pd-lead">
-              KINGBRIGHT CM19XX 1919 COB LED is a mirror-aluminum COB LED series
-              with 19 x 19 mm substrate, 16 mm LES, 120 degree viewing angle and
-              22W / 25W options for professional lighting manufacturers and OEM projects.
+              KINGBRIGHT CM28XX 2828 COB LED is a mirror-aluminum COB LED series
+              with 28 x 28 mm substrate, 22 mm LES, 120 degree viewing angle and
+              50W / 90W options for high lumen lighting manufacturers and OEM projects.
             </p>
             <div className="pd-spec-pills">
-              <span>Series: CM19XX</span>
-              <span>Size: 19 x 19 x 1.55 mm</span>
-              <span>LES: 16 mm</span>
-              <span>Power: 22W / 25W</span>
+              <span>Series: CM28XX</span>
+              <span>Size: 28 x 28 x 1.55 mm</span>
+              <span>LES: 22 mm</span>
+              <span>Power: 50W / 90W</span>
               <span>Angle: 120 deg</span>
               <span>CCT: 2700K-6500K</span>
               <span>ESD: HBM 4000V</span>
             </div>
             <div className="pd-cta-row">
-              <a className="pd-btn pd-btn-primary" href="#inquiry">Request 1919 COB LED Quotation <ArrowRight size={18} /></a>
+              <a className="pd-btn pd-btn-primary" href="#inquiry">Request 2828 COB LED Quotation <ArrowRight size={18} /></a>
               <a className="pd-btn pd-btn-ghost" href="#inquiry">Request COB LED Samples</a>
-              <a className="pd-btn pd-btn-ghost" href="#datasheet">Get CM19XX Datasheet</a>
+              <a className="pd-btn pd-btn-ghost" href="#datasheet">Get CM28XX Datasheet</a>
+              <a className="pd-btn pd-btn-ghost" href="/products/cob-led/1919-cob-led">Compare 1919 COB LED</a>
               <a className="pd-btn pd-btn-ghost" href="/products/cob-led/1414-cob-led">Compare 1414 COB LED</a>
-              <a className="pd-btn pd-btn-ghost" href="/products/cob-led/2828-cob-led">Compare 2828 COB LED</a>
-              <a className="pd-btn pd-btn-ghost" href="/products/smd-led/3535-smd-led">Compare 3535 SMD LED</a>
             </div>
           </div>
           <div className="pd-visual-panel">
-            <span className="pd-badge">COB LED Module</span>
+            <span className="pd-badge">High Power COB</span>
             <div className="pd-hero-photo-frame">
               <img
-                src="/images/products/1919-cob-led/1919-cob-led-product-image.png"
-                alt="KINGBRIGHT 1919 COB LED CM19XX mirror aluminum COB product image"
-                width="406"
-                height="402"
+                src="/images/products/2828-cob-led/2828-cob-led-product-image.png"
+                alt="KINGBRIGHT 2828 COB LED CM28XX mirror aluminum COB product image"
+                width="366"
+                height="368"
                 loading="eager"
                 fetchPriority="high"
               />
@@ -194,8 +193,8 @@ export default function Product1919CobPage() {
             <div className="pd-visual-info">
               <Factory size={24} />
               <div>
-                <strong>Higher Power COB LED Platform</strong>
-                <p>Designed for commercial lighting fixtures that require higher lumen output, thermal review and CCT/CRI selection.</p>
+                <strong>High Lumen COB LED Platform</strong>
+                <p>Designed for higher power commercial lighting fixtures that require strong thermal design and stable COB output.</p>
               </div>
             </div>
           </div>
@@ -204,11 +203,11 @@ export default function Product1919CobPage() {
 
       <section className="pd-section">
         <div className="pd-wrap">
-          <SectionTitle eyebrow="Product Images" title="1919 COB LED Product, Dimensions and Application Views" />
+          <SectionTitle eyebrow="Product Images" title="2828 COB LED Product, Dimensions and Application Views" />
           <div className="pd-image-grid">
-            <ImageBlock title="1919 COB LED Product Appearance" text="Real product image for the CM19XX mirror-aluminum COB LED package." src="/images/products/1919-cob-led/1919-cob-led-product-image.png" alt="1919 COB LED product appearance image from KINGBRIGHT" />
-            <ImageBlock title="1919 COB LED Dimensions" text="Package outline with 19 mm body size, 16 mm light emitting surface and 1.55 mm side reference." src="/images/products/1919-cob-led/1919-cob-led-dimension-drawing.png" alt="1919 COB LED package dimension drawing showing 19 mm substrate and 16 mm LES" />
-            <ImageBlock title="Commercial Lighting Application" text="Application reference for downlights, spotlights, gallery lighting and outdoor lighting fixtures." src="/images/products/1919-cob-led/1919-cob-led-application-downlight.jpg" alt="1919 COB LED application image for commercial downlight and spotlight" />
+            <ImageBlock title="2828 COB LED Product Appearance" text="Real product image for the CM28XX mirror-aluminum COB LED package." src="/images/products/2828-cob-led/2828-cob-led-product-image.png" alt="2828 COB LED product appearance image from KINGBRIGHT" />
+            <ImageBlock title="2828 COB LED Dimensions" text="Package outline with 28 mm body size, 22 mm light emitting surface and mounting hole reference." src="/images/products/2828-cob-led/2828-cob-led-dimension-drawing.png" alt="2828 COB LED package dimension drawing showing 28 mm substrate and 22 mm LES" />
+            <ImageBlock title="High Power Lighting Application" text="Application reference for studio lighting, outdoor spotlights and high lumen area lighting." src="/images/products/2828-cob-led/2828-cob-led-application-area-lighting.jpg" alt="2828 COB LED application image for outdoor area lighting" />
           </div>
         </div>
       </section>
@@ -216,15 +215,15 @@ export default function Product1919CobPage() {
       <section id="specs" className="pd-section pd-white">
         <div className="pd-wrap pd-two">
           <div>
-            <SectionTitle eyebrow="Technical Specifications" title="Real CM19XX 1919 COB LED Datasheet Parameters" />
+            <SectionTitle eyebrow="Technical Specifications" title="Real CM28XX 2828 COB LED Datasheet Parameters" />
             <p className="pd-muted">
-              The following values are extracted from the KINGBRIGHT CM19XX datasheet.
+              The following values are extracted from the KINGBRIGHT CM28XX datasheet.
               Final product code should be confirmed by power, CCT, CRI, voltage code,
               color tolerance and suffix requirements.
             </p>
             <figure className="pd-tech-image">
-              <img src="/images/products/1919-cob-led/1919-cob-led-dimension-drawing.png" alt="KINGBRIGHT 1919 COB LED technical dimension drawing" width="2001" height="1309" loading="lazy" />
-              <figcaption>1919 COB LED package dimensions. All dimensions are in mm; tolerance is +/-0.2 mm unless otherwise noted.</figcaption>
+              <img src="/images/products/2828-cob-led/2828-cob-led-dimension-drawing.png" alt="KINGBRIGHT 2828 COB LED technical dimension drawing" width="1733" height="1101" loading="lazy" />
+              <figcaption>2828 COB LED package dimensions. All dimensions are in mm; tolerance is +/-0.2 mm unless otherwise noted.</figcaption>
             </figure>
           </div>
           <div className="pd-spec-table">
@@ -240,7 +239,7 @@ export default function Product1919CobPage() {
 
       <section className="pd-section">
         <div className="pd-wrap">
-          <SectionTitle eyebrow="Electrical & Optical Options" title="CM1922 and CM1925 COB LED Options" />
+          <SectionTitle eyebrow="Electrical & Optical Options" title="CM2850 and CM2890 COB LED Options" />
           <div className="pd-responsive-table">
             <table>
               <thead>
@@ -261,7 +260,7 @@ export default function Product1919CobPage() {
                     <td>{item.model}</td>
                     <td>{item.power}</td>
                     <td>{item.maxPower}</td>
-                    <td>{item.current} / 36V</td>
+                    <td>{item.current}</td>
                     <td>{item.maxCurrent}</td>
                     <td>{item.pulse}</td>
                     <td>{item.flux80}; {item.flux90}</td>
@@ -276,7 +275,7 @@ export default function Product1919CobPage() {
 
       <section className="pd-section pd-white">
         <div className="pd-wrap">
-          <SectionTitle eyebrow="Features & Advantages" title="COB LED Features for Higher Lumen Lighting Projects" />
+          <SectionTitle eyebrow="Features & Advantages" title="COB LED Features for High Power Lighting Projects" />
           <div className="pd-grid-5">
             {features.map((feature) => (
               <article className="pd-card" key={feature.title}>
@@ -293,12 +292,12 @@ export default function Product1919CobPage() {
         <div className="pd-wrap pd-two">
           <div>
             <p className="pd-label">Applications</p>
-            <h2>Recommended 1919 COB LED Applications</h2>
+            <h2>Recommended 2828 COB LED Applications</h2>
             <p>
-              CM19XX is suitable for commercial lighting products that need higher
-              COB output, a 16 mm light emitting surface and selectable CCT / CRI.
-              Typical use cases include spotlights, downlights, PAR lamps, restaurant
-              lights, gallery lighting and outdoor landscape lighting.
+              CM28XX is suitable for high lumen lighting products that need a larger
+              22 mm light emitting surface, strong thermal design and selectable CCT / CRI.
+              Typical use cases include floodlights, studio lights, spotlights, downlights,
+              PAR lamps and outdoor area lighting.
             </p>
             <div className="pd-application-gallery">
               {applicationImages.map((image) => (
@@ -321,14 +320,14 @@ export default function Product1919CobPage() {
         <div className="pd-wrap pd-download">
           <div>
             <p className="pd-label">Datasheet Download</p>
-            <h2>Download the Official CM19XX 1919 COB LED Datasheet</h2>
+            <h2>Download the Official CM28XX 2828 COB LED Datasheet</h2>
             <p>
               The datasheet includes product coding rules, package dimensions, optical
               and electrical characteristics, CCT color ranks, packaging specifications
               and storage / handling precautions.
             </p>
           </div>
-          <a className="pd-btn pd-btn-primary" href="/downloads/cm19xx-1919-cob-led-datasheet.pdf"><Download size={18} /> Download CM19XX Datasheet</a>
+          <a className="pd-btn pd-btn-primary" href="/downloads/cm28xx-2828-cob-led-datasheet.pdf"><Download size={18} /> Download CM28XX Datasheet</a>
         </div>
       </section>
 
@@ -340,7 +339,7 @@ export default function Product1919CobPage() {
             <article className="pd-card"><ShieldCheck className="pd-blue" size={30} /><h3>Moisture Control</h3><p>Store in a drying cabinet with desiccant at 5 C to 30 C and humidity below 60%RH.</p></article>
             <article className="pd-card"><Microscope className="pd-blue" size={30} /><h3>Silicone Surface</h3><p>Avoid strong pressure on the silicone surface. Use suitable tools and handle from the side surface.</p></article>
             <article className="pd-card"><Zap className="pd-blue" size={30} /><h3>ESD Protection</h3><p>Operators should use anti-static wrist straps or gloves. Equipment and instruments should be properly grounded.</p></article>
-            <article className="pd-card"><Gauge className="pd-blue" size={30} /><h3>Thermal Review</h3><p>Higher power COB LEDs require proper heat dissipation design. Confirm heat sink, substrate and drive current before production.</p></article>
+            <article className="pd-card"><Gauge className="pd-blue" size={30} /><h3>Thermal Review</h3><p>High power COB LEDs require proper heat dissipation design. Confirm heat sink, substrate and drive current before production.</p></article>
           </div>
         </div>
       </section>
@@ -363,7 +362,7 @@ export default function Product1919CobPage() {
         <div className="pd-wrap pd-inquiry">
           <div className="pd-inquiry-info">
             <p className="pd-label">Product Inquiry</p>
-            <h2>Send Your 1919 COB LED Requirement</h2>
+            <h2>Send Your 2828 COB LED Requirement</h2>
             <p>
               Share your required model, power, CCT, CRI, voltage, quantity,
               fixture type and sample request details. KINGBRIGHT can support
@@ -381,12 +380,12 @@ export default function Product1919CobPage() {
               <Field label="Email" name="email" placeholder="name@company.com" type="email" />
               <Field label="WhatsApp" name="whatsapp" placeholder="+86 135 3014 4658" />
             </div>
-            <Field label="Product Requirement" name="product_requirement" placeholder="1919 COB LED, CM1922 / CM1925, CCT, CRI, quantity..." />
+            <Field label="Product Requirement" name="product_requirement" placeholder="2828 COB LED, CM2850 / CM2890, CCT, CRI, quantity..." />
             <label>
               Message
               <textarea name="message" placeholder="Please describe power, CCT, CRI, voltage option, fixture type, sample request, datasheet needs and annual demand." />
             </label>
-            <button className="pd-btn pd-btn-primary" type="submit">Submit 1919 COB LED RFQ <ArrowRight size={18} /></button>
+            <button className="pd-btn pd-btn-primary" type="submit">Submit 2828 COB LED RFQ <ArrowRight size={18} /></button>
           </form>
         </div>
       </section>

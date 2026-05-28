@@ -209,6 +209,7 @@ export default function Product1414CobPage() {
               <a className="pd-btn pd-btn-ghost" href="#inquiry">Request COB LED Samples</a>
               <a className="pd-btn pd-btn-ghost" href="#datasheet">Get COB Datasheet</a>
               <a className="pd-btn pd-btn-ghost" href="/products/cob-led/1919-cob-led">Compare 1919 COB LED</a>
+              <a className="pd-btn pd-btn-ghost" href="/products/cob-led/2828-cob-led">Compare 2828 COB LED</a>
               <a className="pd-btn pd-btn-ghost" href="/products/smd-led/3535-smd-led">Compare 3535 SMD LED</a>
             </div>
           </div>

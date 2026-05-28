@@ -112,6 +112,7 @@ export default function FAQPage() {
             <Link href="/products/smd-led/3535-smd-led">Review 3535 SMD LED Specs</Link>
             <Link href="/products/cob-led/1414-cob-led">Review 1414 COB LED Specs</Link>
             <Link href="/products/cob-led/1919-cob-led">Review 1919 COB LED Specs</Link>
+            <Link href="/products/cob-led/2828-cob-led">Review 2828 COB LED Specs</Link>
             <Link href="/applications">Explore LED Applications</Link>
             <Link href="/download-center">Download Center</Link>
             <Link href="/about-factory">Factory & Quality</Link>

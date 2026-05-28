@@ -117,9 +117,9 @@ export const productCategories: ProductCategory[] = [
     title: "COB LED Modules for Spotlights, Downlights and Commercial Lighting",
     description:
       "KINGBRIGHT supplies mirror-aluminum COB LED products for spotlight, downlight, PAR lamp, bulb, restaurant lighting and outdoor landscape lighting projects.",
-    seoTitle: "COB LED Manufacturer | 1414 COB LED Modules for Commercial Lighting",
+    seoTitle: "COB LED Manufacturer | 1414, 1919 and 2828 COB LED Modules",
     seoDescription:
-      "KINGBRIGHT COB LED category page for overseas buyers, including 1414 COB LED / CM14XX COB series for spotlights, downlights and commercial lighting projects.",
+      "KINGBRIGHT COB LED category page for overseas buyers, including 1414, 1919 and 2828 COB LED modules for spotlights, downlights, floodlights and commercial lighting projects.",
     products: [
       {
         name: "1414 COB LED",
@@ -134,6 +134,13 @@ export const productCategories: ProductCategory[] = [
           "CM19XX mirror-aluminum COB LED series with 19 x 19 mm substrate, 16 mm LES, 120 degree viewing angle and 22W / 25W options for higher lumen commercial lighting.",
         href: "/products/cob-led/1919-cob-led",
         specs: ["19 x 19 x 1.55 mm", "LES 16 mm", "22W / 25W options"]
+      },
+      {
+        name: "2828 COB LED",
+        description:
+          "CM28XX high power mirror-aluminum COB LED series with 28 x 28 mm substrate, 22 mm LES and 50W / 90W options for floodlights, studio lights and outdoor area lighting.",
+        href: "/products/cob-led/2828-cob-led",
+        specs: ["28 x 28 x 1.55 mm", "LES 22 mm", "50W / 90W options"]
       }
     ],
     applications: ["Spotlights", "Downlights", "PAR lamps", "Bulb lamps", "Restaurant lighting", "Outdoor landscape lighting"],
