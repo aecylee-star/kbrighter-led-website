@@ -60,7 +60,7 @@ export default async function ApplicationDetailPage({ params }: Props) {
             <h1>{app.title}</h1>
             <p className="app-lead">{app.intro}</p>
             <div className="app-cta-row">
-              <a className="app-btn app-btn-primary" href="#inquiry">Get Quote <ArrowRight size={18} /></a>
+              <a className="app-btn app-btn-primary" href="#inquiry">Request Application Quotation <ArrowRight size={18} /></a>
               <a className="app-btn app-btn-ghost" href="#products">Recommended LEDs</a>
               <a className="app-btn app-btn-ghost" href="#technical">Technical Highlights</a>
             </div>
@@ -94,10 +94,10 @@ export default async function ApplicationDetailPage({ params }: Props) {
           <h2>Product Options for {app.title}</h2>
           <div className="detail-card-grid">
             {app.products.map((product) => (
-              <Link href="/products/2835-smd-led" className="detail-product" key={product}>
+              <Link href="/products/smd-led/2835-smd-led" className="detail-product" key={product}>
                 <FileText size={26} />
                 <strong>{product}</strong>
-                <span>View product details</span>
+                <span>Review technical product details</span>
               </Link>
             ))}
           </div>
@@ -127,8 +127,8 @@ export default async function ApplicationDetailPage({ params }: Props) {
             <p>Share drawings, target LED type, CCT/color, current, voltage, brightness, quantity and PCBA requirements. We can help prepare datasheet and sample recommendations.</p>
           </div>
           <div className="detail-inquiry">
-            <a className="app-btn app-btn-primary" href="mailto:sales@kbrighter.com"><Mail size={18} /> Contact Sales</a>
-            <a className="app-btn app-btn-ghost" href="/products/2835-smd-led">View 2835 SMD LED</a>
+            <a className="app-btn app-btn-primary" href="mailto:sales@kbrighter.com"><Mail size={18} /> Contact Sales Engineer</a>
+            <a className="app-btn app-btn-ghost" href="/products/smd-led/2835-smd-led">Review 2835 SMD LED Specs</a>
           </div>
         </div>
       </section>

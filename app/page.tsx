@@ -18,12 +18,12 @@ import {
 } from "lucide-react";
 
 const products = [
-  ["SMD LED", "Surface-mount LED packages for lighting, display backlight, signage and electronics, including 2835, 3030, 3535 and 5050 formats.", Sparkles],
-  ["DIP LED", "Through-hole LED components for indicators, control panels, meters, signage and electronic assemblies.", Layers3],
-  ["High Power LED", "High-output LED components for commercial lighting, industrial illumination and demanding thermal environments.", Zap],
-  ["Infrared LED", "IR LED solutions for sensing, remote control, security equipment, industrial detection and smart systems.", Gauge],
-  ["LED Display Components", "LED components for display systems, indicators, signage modules and visual communication products.", PackageCheck],
-  ["PCBA Support", "PCBA integration support for LED lighting, display electronics and custom projects.", CircuitBoard]
+  ["SMD LED", "Surface-mount LED packages for lighting, display backlight, signage and electronics, including 2835, 3030, 3535 and 5050 formats.", Sparkles, "/products/smd-led"],
+  ["DIP LED", "Through-hole LED components for indicators, control panels, meters, signage and electronic assemblies.", Layers3, "/products/dip-led"],
+  ["High Power LED", "High-output LED components for commercial lighting, industrial illumination and demanding thermal environments.", Zap, "/products/high-power-led"],
+  ["Infrared LED", "IR LED solutions for sensing, remote control, security equipment, industrial detection and smart systems.", Gauge, "/products/infrared-led"],
+  ["LED Display Components", "LED components for display systems, indicators, signage modules and visual communication products.", PackageCheck, "/products/led-display-components"],
+  ["PCBA Support", "PCBA integration support for LED lighting, display electronics and custom projects.", CircuitBoard, "/products/pcba-support"]
 ] as const;
 
 const applications = [
@@ -71,10 +71,10 @@ export default function Home() {
               display system builders, industrial electronics companies and OEM projects.
             </p>
             <div className="kb-cta-row">
-              <a className="kb-btn kb-btn-primary" href="#contact">Get Quote <ArrowRight size={18} /></a>
-              <a className="kb-btn kb-btn-ghost" href="#contact">Request Samples</a>
-              <a className="kb-btn kb-btn-ghost" href="#contact">Request Datasheet</a>
-              <a className="kb-btn kb-btn-ghost" href="#contact">Contact Sales</a>
+              <a className="kb-btn kb-btn-primary" href="#contact">Request Quotation <ArrowRight size={18} /></a>
+              <a className="kb-btn kb-btn-ghost" href="#contact">Request LED Samples</a>
+              <a className="kb-btn kb-btn-ghost" href="#contact">Get Product Datasheet</a>
+              <a className="kb-btn kb-btn-ghost" href="#contact">Contact Sales Engineer</a>
             </div>
             <div className="kb-proof">
               {["LED Components", "OEM/ODM", "PCBA Support"].map((item) => (
@@ -112,12 +112,12 @@ export default function Home() {
         <div className="kb-wrap">
           <SectionTitle eyebrow="Product Categories" title="LED Components and PCBA Support for B2B Projects" />
           <div className="kb-grid-3">
-            {products.map(([title, text, Icon]) => (
+            {products.map(([title, text, Icon, href]) => (
               <article className="kb-card" key={title}>
                 <Icon className="kb-blue" size={34} />
                 <h3>{title}</h3>
                 <p>{text}</p>
-                <a href="#contact">Contact Sales <ArrowRight size={15} /></a>
+                <a href={href}>Review Product Category <ArrowRight size={15} /></a>
               </article>
             ))}
           </div>
@@ -202,7 +202,7 @@ export default function Home() {
               Message
               <textarea name="message" placeholder="Please share application, specifications, wavelength/color, voltage/current, quantity, datasheet request or sample needs..." />
             </label>
-            <button className="kb-btn kb-btn-primary" type="submit">Get Quote <ArrowRight size={18} /></button>
+            <button className="kb-btn kb-btn-primary" type="submit">Submit RFQ to Sales Engineer <ArrowRight size={18} /></button>
           </form>
         </div>
       </section>

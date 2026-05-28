@@ -43,8 +43,8 @@ export default function ApplicationsPage() {
               LEDs, display LEDs and PCBA support for real application requirements.
             </p>
             <div className="app-cta-row">
-              <a className="app-btn app-btn-primary" href="#inquiry">Get Application Support <ArrowRight size={18} /></a>
-              <a className="app-btn app-btn-ghost" href="#applications">View Applications</a>
+              <a className="app-btn app-btn-primary" href="#inquiry">Request Application Engineering Support <ArrowRight size={18} /></a>
+              <a className="app-btn app-btn-ghost" href="#applications">Explore LED Application Solutions</a>
             </div>
           </div>
           <div className="app-hero-panel">
@@ -69,7 +69,7 @@ export default function ApplicationsPage() {
                   <div className="app-tags">
                     {item.products.slice(0, 3).map((product) => <span key={product}>{product}</span>)}
                   </div>
-                  <Link href={`/applications/${item.slug}`}>View Application <ArrowRight size={16} /></Link>
+                  <Link href={`/applications/${item.slug}`}>Review Application Solution <ArrowRight size={16} /></Link>
                 </article>
               );
             })}
@@ -103,7 +103,7 @@ export default function ApplicationsPage() {
             <h2>Need Help Choosing LED Components?</h2>
             <p>Send your application, target specifications, quantity and PCBA needs. KINGBRIGHT can help match suitable LED products.</p>
           </div>
-          <a className="app-btn app-btn-primary" href="mailto:sales@kbrighter.com">Contact Sales <ArrowRight size={18} /></a>
+          <a className="app-btn app-btn-primary" href="mailto:sales@kbrighter.com">Discuss Your Application Project <ArrowRight size={18} /></a>
         </div>
       </section>
     </main>

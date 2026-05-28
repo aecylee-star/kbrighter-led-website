@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { ArrowRight, BadgeCheck, ClipboardCheck, Cpu, Factory, Globe2, Mail, Microscope, PackageCheck, ShieldCheck, Wrench } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About KINGBRIGHT Factory | LED Packaging & Quality Control",
+  title: "KINGBRIGHT LED Factory | LED Packaging, SMT & Quality Control",
   description:
-    "Learn about KINGBRIGHT LED component manufacturing, LED packaging capability, PCBA support, OEM/ODM service, quality control, engineering support and export cooperation.",
+    "Learn about KINGBRIGHT's LED packaging experience, SMT production capability, OEM/ODM support, export service, engineering support, reliability testing and PCBA integration.",
   keywords: [
     "KINGBRIGHT factory",
     "LED components manufacturer",
@@ -15,62 +15,62 @@ export const metadata: Metadata = {
     "SMD LED manufacturer"
   ],
   openGraph: {
-    title: "About KINGBRIGHT Factory | LED Packaging & Quality Control",
+    title: "KINGBRIGHT LED Factory | LED Packaging, SMT & Quality Control",
     description:
-      "Learn about KINGBRIGHT LED component manufacturing, LED packaging capability, PCBA support, OEM/ODM service, quality control, engineering support and export cooperation.",
+      "Learn about KINGBRIGHT's LED packaging experience, SMT production capability, OEM/ODM support, export service, engineering support, reliability testing and PCBA integration.",
     url: "/about-factory",
     type: "website"
   }
 };
 
 const factoryStats = [
-  ["LED Packaging", "SMD, DIP, high power, infrared and display LED support"],
-  ["PCBA Support", "Component selection, board-level discussion and project coordination"],
-  ["OEM/ODM", "Custom LED and application-driven manufacturing support"],
-  ["Export Service", "Communication for overseas buyers, distributors and OEM customers"]
+  ["LED Packaging", "SMD, DIP, high power, infrared and display LED packaging support for repeat production"],
+  ["SMT & PCBA", "Board-level assembly support for LED modules, lighting electronics and custom PCBA projects"],
+  ["OEM/ODM", "Application-based LED selection, custom specifications, sampling and production coordination"],
+  ["Export Service", "English communication, documentation support and shipment coordination for overseas buyers"]
 ];
 
 const factoryOverview = [
   {
     title: "Production Workshop",
-    text: "Organized LED component production environment for mass production and project-based supply.",
+    text: "Organized production areas for LED component packaging, inspection, packing and order preparation, supporting both sample builds and repeat production.",
     icon: Factory
   },
   {
     title: "SMT Production Lines",
-    text: "SMT and board-level support for LED modules, lighting electronics and PCBA projects.",
+    text: "SMT capability for LED modules and electronic assemblies, with attention to component placement, soldering quality, board cleanliness and production consistency.",
     icon: ClipboardCheck
   },
   {
     title: "LED Packaging Lines",
-    text: "LED packaging process support for SMD LEDs, DIP LEDs, infrared LEDs and display components.",
+    text: "Packaging support for SMD LED, DIP LED, infrared LED, high power LED and display LED components, including binning and parameter control.",
     icon: PackageCheck
   },
   {
     title: "Engineering Capability",
-    text: "Technical communication for package selection, current, voltage, CCT, CRI, brightness and PCBA needs.",
+    text: "Engineering communication for package size, forward voltage, drive current, wavelength, CCT, CRI, luminous flux, thermal design and PCB integration.",
     icon: Cpu
   },
   {
     title: "Production Capacity",
-    text: "Scalable production coordination for samples, pilot orders and repeat mass production demand.",
+    text: "Flexible production coordination for prototypes, pilot runs and long-term supply programs, with batch control and export packing support.",
     icon: Wrench
   }
 ];
 
 const qcSteps = [
-  ["Incoming Material Inspection", "Inspect chips, brackets, phosphor, packaging materials and key incoming components before production."],
-  ["Production Quality Control", "Monitor LED packaging, SMT, process parameters, bin consistency and production traceability."],
-  ["Aging Test", "Use aging and burn-in processes to evaluate stability before delivery for selected products and projects."],
-  ["Reliability Testing", "Support optical, electrical, thermal, ESD, soldering and environmental reliability checks according to project needs."],
-  ["Final Inspection", "Confirm appearance, electrical parameters, optical bins, packaging and shipment information before dispatch."]
+  ["Incoming Material Inspection", "Check LED chips, lead frames, brackets, phosphor, encapsulation materials, PCB materials and key purchased components before release to production."],
+  ["In-Process Quality Control", "Monitor packaging parameters, SMT placement, soldering condition, polarity, bin consistency and process traceability during production."],
+  ["Aging Test", "Apply aging or burn-in checks for selected LED products and modules to verify brightness stability and early-life performance before shipment."],
+  ["Reliability Testing", "Support optical, electrical, thermal, ESD, solderability, high/low temperature and humidity-related checks according to product and project requirements."],
+  ["Final Inspection", "Confirm appearance, dimensions, electrical values, optical bins, label information, packing method and shipment documents before dispatch."]
 ];
 
 const engineering = [
-  "LED package selection and specification review",
-  "Custom CCT, CRI, brightness and wavelength discussion",
-  "PCB footprint, soldering and PCBA integration support",
-  "OEM project communication for lighting, display and electronics customers"
+  "LED package selection, specification review and alternative part recommendation",
+  "Custom CCT, CRI, luminous intensity, wavelength and binning discussion",
+  "PCB footprint, soldering profile, thermal path and PCBA integration support",
+  "OEM/ODM project communication for lighting, display, control and electronics customers"
 ];
 
 const certificates = ["ISO", "RoHS", "CE", "Other Certificates"];
@@ -84,7 +84,7 @@ export default function AboutFactoryPage() {
     url: "https://www.kbrighter.com",
     email: "sales@kbrighter.com",
     description:
-      "LED components manufacturer with LED packaging, PCBA support, OEM/ODM service and quality control capability."
+      "LED components manufacturer with LED packaging experience, SMT production support, OEM/ODM service, PCBA integration support and quality control capability."
   };
 
   return (
@@ -98,27 +98,28 @@ export default function AboutFactoryPage() {
             <p className="factory-eyebrow">About KINGBRIGHT Factory</p>
             <h1>LED Components Manufacturing, Packaging and Quality Control</h1>
             <p className="factory-lead">
-              KINGBRIGHT supports overseas B2B buyers with LED components, LED packaging
-              experience, PCBA project discussion, OEM/ODM cooperation and export-oriented
-              communication for lighting, display, industrial control and electronics applications.
+              KINGBRIGHT supplies LED components and related PCBA support for overseas
+              manufacturers, distributors and OEM teams. Our work focuses on stable LED
+              packaging, practical SMT coordination, engineering communication and controlled
+              production for lighting, display, industrial control and electronics projects.
             </p>
             <div className="factory-cta-row">
-              <a className="factory-btn factory-btn-primary" href="#contact">Contact Sales <ArrowRight size={18} /></a>
-              <a className="factory-btn factory-btn-ghost" href="#quality">View Quality Control</a>
-              <a className="factory-btn factory-btn-ghost" href="#engineering">Engineering Support</a>
+              <a className="factory-btn factory-btn-primary" href="#contact">Contact Sales Engineer <ArrowRight size={18} /></a>
+              <a className="factory-btn factory-btn-ghost" href="#quality">Review Quality Control Process</a>
+              <a className="factory-btn factory-btn-ghost" href="#engineering">Request Engineering Support</a>
             </div>
           </div>
           <div className="factory-panel">
             <Factory size={48} />
             <strong>Manufacturer Trust for Global Buyers</strong>
-            <p>Factory capability, technical communication and quality control built for distributors, engineers and OEM customers.</p>
+            <p>Factory capability, specification-driven communication and process control for buyers who need stable parts, clear documentation and repeatable supply.</p>
           </div>
         </div>
       </header>
 
       <section className="factory-section">
         <div className="factory-wrap">
-          <SectionTitle eyebrow="Company Introduction" title="LED Components Manufacturer with Packaging and PCBA Support" />
+          <SectionTitle eyebrow="Company Introduction" title="LED Packaging Manufacturer with SMT and PCBA Support" />
           <div className="factory-stat-grid">
             {factoryStats.map(([title, text]) => (
               <div className="factory-stat" key={title}>
@@ -132,7 +133,7 @@ export default function AboutFactoryPage() {
 
       <section className="factory-section factory-white">
         <div className="factory-wrap">
-          <SectionTitle eyebrow="Factory Overview" title="Production Capability for LED and Electronics Projects" />
+          <SectionTitle eyebrow="Factory Overview" title="Production Capability for LED Components and Board-Level Projects" />
           <div className="factory-grid">
             {factoryOverview.map((item) => (
               <article className="factory-card" key={item.title}>
@@ -150,9 +151,10 @@ export default function AboutFactoryPage() {
           <div>
             <SectionTitle eyebrow="Quality Control System" title="Process Control from Incoming Materials to Final Inspection" />
             <p className="factory-muted">
-              KINGBRIGHT presents quality control as a practical manufacturing system:
-              material inspection, process monitoring, aging, reliability testing and final
-              shipment checks for stable B2B cooperation.
+              KINGBRIGHT treats quality control as part of daily production, not a final
+              checkpoint only. Material release, process monitoring, aging verification,
+              reliability checks and final inspection are used to reduce batch variation and
+              support stable long-term cooperation.
             </p>
           </div>
           <div className="factory-qc-list">
@@ -175,9 +177,10 @@ export default function AboutFactoryPage() {
             <p className="factory-label">Engineering & R&D</p>
             <h2>Technical Support for Custom LED and PCBA Projects</h2>
             <p>
-              KINGBRIGHT works with engineers and purchasing teams to clarify LED
-              specifications, application requirements, packaging choices and board-level
-              integration needs before sample approval and production.
+              KINGBRIGHT works with engineers and purchasing teams before samples and mass
+              production are confirmed. We help review electrical and optical parameters,
+              application conditions, LED package selection, PCB design concerns and PCBA
+              integration details so projects can move forward with fewer specification risks.
             </p>
           </div>
           <div className="factory-dark-list">
@@ -206,11 +209,12 @@ export default function AboutFactoryPage() {
       <section className="factory-section factory-white">
         <div className="factory-wrap factory-two">
           <div>
-            <SectionTitle eyebrow="Global Market" title="Export Cooperation and Long-Term OEM Partnerships" />
+          <SectionTitle eyebrow="Global Market" title="Export Cooperation for Distributors and OEM Customers" />
             <p className="factory-muted">
-              KINGBRIGHT supports overseas buyers, distributors and OEM customers with
-              responsive communication, sample coordination, technical documentation and
-              repeat-order production support.
+              KINGBRIGHT supports overseas customers with English communication, quotation
+              follow-up, sample arrangement, datasheet coordination, export packing and
+              repeat-order support. We aim to make LED sourcing easier for buyers who need
+              technical clarity as well as reliable delivery.
             </p>
           </div>
           <div className="factory-market-grid">
@@ -240,12 +244,13 @@ export default function AboutFactoryPage() {
             <p className="factory-label">Work with KINGBRIGHT</p>
             <h2>Send Your LED Component or PCBA Requirement</h2>
             <p>Contact sales for samples, catalog, datasheets or engineering support for your next OEM project.</p>
+            <p>Share your LED package, color, electrical rating, application and annual demand, and our team will help review the suitable product direction.</p>
           </div>
           <div className="factory-contact-actions">
-            <a className="factory-btn factory-btn-primary" href="mailto:sales@kbrighter.com"><Mail size={18} /> Contact Sales</a>
-            <a className="factory-btn factory-btn-dark" href="mailto:sales@kbrighter.com?subject=Request%20Samples">Request Samples</a>
-            <a className="factory-btn factory-btn-dark" href="mailto:sales@kbrighter.com?subject=Request%20Catalog">Request Catalog</a>
-            <a className="factory-btn factory-btn-dark" href="mailto:sales@kbrighter.com?subject=Engineering%20Support">Engineering Support</a>
+            <a className="factory-btn factory-btn-primary" href="mailto:sales@kbrighter.com"><Mail size={18} /> Contact Sales Engineer</a>
+            <a className="factory-btn factory-btn-dark" href="mailto:sales@kbrighter.com?subject=Request%20LED%20Samples">Request LED Samples</a>
+            <a className="factory-btn factory-btn-dark" href="mailto:sales@kbrighter.com?subject=Request%20Product%20Catalog">Get Product Catalog</a>
+            <a className="factory-btn factory-btn-dark" href="mailto:sales@kbrighter.com?subject=Request%20Engineering%20Support">Request Engineering Support</a>
           </div>
         </div>
       </section>

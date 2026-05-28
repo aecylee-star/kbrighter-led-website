@@ -66,8 +66,8 @@ export default function DownloadCenterPage() {
               review, purchasing evaluation and OEM project communication.
             </p>
             <div className="res-cta-row">
-              <a className="res-btn res-btn-primary" href="#downloads">View Downloads <ArrowRight size={18} /></a>
-              <a className="res-btn res-btn-ghost" href="mailto:sales@kbrighter.com">Request Datasheet</a>
+              <a className="res-btn res-btn-primary" href="#downloads">Browse Technical Documents <ArrowRight size={18} /></a>
+              <a className="res-btn res-btn-ghost" href="mailto:sales@kbrighter.com">Get Product Datasheet</a>
             </div>
           </div>
           <div className="res-panel">
@@ -87,12 +87,12 @@ export default function DownloadCenterPage() {
                 <section.icon size={34} />
                 <h3>{section.title}</h3>
                 <p>{section.text}</p>
-                <a href="mailto:sales@kbrighter.com?subject=Document%20Request">Request File <ArrowRight size={15} /></a>
+                <a href="mailto:sales@kbrighter.com?subject=Technical%20Document%20Request">Request Technical File <ArrowRight size={15} /></a>
               </article>
             ))}
           </div>
           <div className="res-link-row">
-            <Link href="/products/2835-smd-led">2835 SMD LED Datasheet</Link>
+            <Link href="/products/smd-led/2835-smd-led">2835 SMD LED Datasheet</Link>
             <Link href="/applications">Applications</Link>
             <Link href="/about-factory">Factory & Quality</Link>
           </div>
@@ -107,8 +107,8 @@ export default function DownloadCenterPage() {
             <p>Tell us the product model, application and required document type. KINGBRIGHT can help provide relevant datasheets and support materials.</p>
           </div>
           <div className="res-actions">
-            <a className="res-btn res-btn-primary" href="mailto:sales@kbrighter.com"><Mail size={18} /> Contact Sales</a>
-            <a className="res-btn" href="mailto:sales@kbrighter.com?subject=Request%20Catalog">Request Catalog</a>
+            <a className="res-btn res-btn-primary" href="mailto:sales@kbrighter.com"><Mail size={18} /> Contact Sales Engineer</a>
+            <a className="res-btn" href="mailto:sales@kbrighter.com?subject=Request%20Product%20Catalog">Get Product Catalog</a>
           </div>
         </div>
       </section>
