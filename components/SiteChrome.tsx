@@ -14,6 +14,7 @@ const navLinks = [
 const productLinks = [
   ["SMD LED", "/products/smd-led"],
   ["DIP LED", "/products/dip-led"],
+  ["COB LED", "/products/cob-led"],
   ["High Power LED", "/products/high-power-led"],
   ["Infrared LED", "/products/infrared-led"],
   ["LED Display Components", "/products/led-display-components"],
@@ -125,6 +126,7 @@ export function SiteFooter() {
             ["2835 0.5W Datasheet", "/products/smd-led/2835-0-5w-smd-led"],
             ["3030 SMD LED Datasheet", "/products/smd-led/3030-smd-led"],
             ["3535 SMD LED Datasheet", "/products/smd-led/3535-smd-led"],
+            ["1414 COB LED Datasheet", "/products/cob-led/1414-cob-led"],
             ["Company Profile", "/download-center"],
             ["Certifications", "/download-center"]
           ]}

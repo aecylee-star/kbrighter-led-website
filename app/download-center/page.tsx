@@ -32,7 +32,7 @@ const sections = [
   },
   {
     title: "LED Datasheets",
-    text: "Product-specific datasheets for 2835 0.2W, 2835 0.5W, 3030 SMD LED, 3535 SMD LED and other LED component models.",
+    text: "Product-specific datasheets for 2835 0.2W, 2835 0.5W, 3030 SMD LED, 3535 SMD LED, 1414 COB LED and other LED component models.",
     icon: FileText
   },
   {
@@ -96,6 +96,7 @@ export default function DownloadCenterPage() {
             <Link href="/products/smd-led/2835-0-5w-smd-led">2835 0.5W SMD LED Datasheet</Link>
             <Link href="/products/smd-led/3030-smd-led">3030 SMD LED Datasheet</Link>
             <Link href="/products/smd-led/3535-smd-led">3535 SMD LED Datasheet</Link>
+            <Link href="/products/cob-led/1414-cob-led">1414 COB LED Datasheet</Link>
             <Link href="/applications">Applications</Link>
             <Link href="/about-factory">Factory & Quality</Link>
           </div>

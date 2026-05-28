@@ -47,6 +47,7 @@ const faqs = [
   ["What is your usual lead time?", "Lead time depends on sample availability, production schedule, quantity, customization, binning requirements and export preparation. Standard products may be faster, while custom or project-based orders require confirmation after RFQ review."],
   ["Can samples be provided before mass production?", "Yes. Samples can be arranged for qualified projects. Please share the LED type, target specification, application, expected quantity and delivery address so we can confirm sample availability and timing."],
   ["Can you provide datasheets?", "Yes. Datasheets can be provided for available products and project review. If a customer needs specific parameters such as CCT, CRI, luminous flux, viewing angle, voltage or current, please mention them when requesting the datasheet."],
+  ["What is a COB LED and when should I use it?", "COB LED means chip-on-board LED. It is commonly used in spotlights, downlights, PAR lamps and commercial lighting where a compact high-output light emitting surface is required. For COB selection, engineers should review power, voltage, CCT, CRI, LES size, beam angle and heat dissipation."],
   ["Can you help compare or replace an existing LED model?", "Yes. Please provide the existing part number, datasheet, package size, electrical parameters, optical requirements and application. We can review possible alternatives or recommend a suitable KINGBRIGHT option."],
   ["Do you support export orders?", "Yes. KINGBRIGHT supports overseas buyers with English communication, quotation, sample coordination, export packing, shipping document support and long-term repeat order communication."],
   ["What certifications can you provide?", "Certification documents such as ISO, RoHS, CE and other available certificates can be provided for buyer review depending on the product and market requirement. Please request the specific document needed for your application or region."]
@@ -109,6 +110,7 @@ export default function FAQPage() {
             <Link href="/products/smd-led/2835-0-5w-smd-led">Review 2835 0.5W SMD LED Specs</Link>
             <Link href="/products/smd-led/3030-smd-led">Review 3030 SMD LED Specs</Link>
             <Link href="/products/smd-led/3535-smd-led">Review 3535 SMD LED Specs</Link>
+            <Link href="/products/cob-led/1414-cob-led">Review 1414 COB LED Specs</Link>
             <Link href="/applications">Explore LED Applications</Link>
             <Link href="/download-center">Download Center</Link>
             <Link href="/about-factory">Factory & Quality</Link>

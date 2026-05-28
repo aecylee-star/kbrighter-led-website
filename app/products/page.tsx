@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   }
 };
 
-const categoryIcons = [Sparkles, Lightbulb, Zap, Radio, Boxes, CircuitBoard];
+const categoryIcons = [Sparkles, Lightbulb, Boxes, Zap, Radio, Boxes, CircuitBoard];
 
 export default function ProductsPage() {
   const schema = {

@@ -111,6 +111,33 @@ export const productCategories: ProductCategory[] = [
     ]
   },
   {
+    slug: "cob-led",
+    name: "COB LED",
+    eyebrow: "COB LED Components",
+    title: "COB LED Modules for Spotlights, Downlights and Commercial Lighting",
+    description:
+      "KINGBRIGHT supplies mirror-aluminum COB LED products for spotlight, downlight, PAR lamp, bulb, restaurant lighting and outdoor landscape lighting projects.",
+    seoTitle: "COB LED Manufacturer | 1414 COB LED Modules for Commercial Lighting",
+    seoDescription:
+      "KINGBRIGHT COB LED category page for overseas buyers, including 1414 COB LED / CM14XX COB series for spotlights, downlights and commercial lighting projects.",
+    products: [
+      {
+        name: "1414 COB LED",
+        description:
+          "CM14XX mirror-aluminum COB LED series with 13.5 x 13.5 mm substrate, 11 mm LES, 120 degree viewing angle and 7W / 12W / 20W options.",
+        href: "/products/cob-led/1414-cob-led",
+        specs: ["13.5 x 13.5 x 1.5 mm", "LES 11 mm", "7W / 12W / 20W options"]
+      }
+    ],
+    applications: ["Spotlights", "Downlights", "PAR lamps", "Bulb lamps", "Restaurant lighting", "Outdoor landscape lighting"],
+    advantages: ["Mirror-aluminum substrate", "High reliability", "120 degree light output", "RoHS compliant", "Multiple power options"],
+    relatedApplications: [
+      { label: "LED for Commercial Lighting", href: "/applications/led-for-commercial-lighting" },
+      { label: "LED for Panel Lights", href: "/applications/led-for-panel-lights" },
+      { label: "LED for PCB/PCBA Projects", href: "/applications/led-for-pcb-pcba-projects" }
+    ]
+  },
+  {
     slug: "high-power-led",
     name: "High Power LED",
     eyebrow: "High Brightness LED Packages",

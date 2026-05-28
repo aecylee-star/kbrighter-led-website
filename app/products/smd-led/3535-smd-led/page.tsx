@@ -198,6 +198,7 @@ export default function Product3535Page() {
               <a className="pd-btn pd-btn-ghost" href="#datasheet">Get 3535 Datasheet</a>
               <a className="pd-btn pd-btn-ghost" href="/products/smd-led/3030-smd-led">Compare 3030 SMD LED</a>
               <a className="pd-btn pd-btn-ghost" href="/products/smd-led/2835-0-5w-smd-led">Compare 2835 0.5W</a>
+              <a className="pd-btn pd-btn-ghost" href="/products/cob-led/1414-cob-led">Compare 1414 COB LED</a>
             </div>
           </div>
           <div className="pd-visual-panel">
