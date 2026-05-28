@@ -76,6 +76,71 @@ const engineering = [
 const certificates = ["ISO", "RoHS", "CE", "Other Certificates"];
 const markets = ["Europe", "North America", "Southeast Asia", "Middle East", "South America", "OEM / ODM Projects"];
 
+const manufacturingImages = [
+  {
+    title: "SMT Production Line",
+    text: "Automated SMT production capability for LED modules, control boards and electronics assemblies.",
+    src: "/images/factory/smt-production-line.png",
+    alt: "KINGBRIGHT SMT production line for LED module and PCBA manufacturing"
+  },
+  {
+    title: "PCBA High-Speed Production Line",
+    text: "Board-level production support for LED driver boards, lighting modules and customized PCBA projects.",
+    src: "/images/factory/pcb-high-speed-production-line.png",
+    alt: "KINGBRIGHT PCB high-speed production line for PCBA support"
+  },
+  {
+    title: "Clean Room SMT Workshop",
+    text: "Controlled SMT production environment for consistent placement, soldering quality and process stability.",
+    src: "/images/factory/clean-room-smt-workshop.png",
+    alt: "KINGBRIGHT clean room SMT workshop for LED electronics manufacturing"
+  },
+  {
+    title: "Advanced Manufacturing Automation",
+    text: "Automation support helps improve handling consistency, inspection repeatability and production efficiency.",
+    src: "/images/factory/robotics-automation-pcba.png",
+    alt: "KINGBRIGHT robotics automation equipment for PCBA manufacturing"
+  }
+];
+
+const qcImages = [
+  {
+    title: "AOI Inspection",
+    text: "Automated optical inspection helps check solder joints, component placement and visible assembly defects.",
+    src: "/images/factory/aoi-inspection-machine.png",
+    alt: "KINGBRIGHT AOI inspection machine for PCBA quality control"
+  },
+  {
+    title: "X-RAY Inspection",
+    text: "X-RAY inspection supports hidden solder joint review and reliability checks for selected PCBA projects.",
+    src: "/images/factory/x-ray-inspection-machine.png",
+    alt: "KINGBRIGHT X-RAY inspection machine for reliability testing and QC"
+  },
+  {
+    title: "Flying Probe Testing",
+    text: "Flying probe testing supports electrical verification for prototype and small-batch PCBA production.",
+    src: "/images/factory/flying-probe-testing.png",
+    alt: "KINGBRIGHT flying probe testing equipment for PCB and PCBA inspection"
+  }
+];
+
+const galleryImages = [
+  {
+    title: "Production Workshop",
+    text: "LED component production and order preparation area.",
+    src: "/images/factory/production-workshop.png",
+    alt: "KINGBRIGHT LED production workshop for overseas B2B buyers"
+  },
+  {
+    title: "LED Packaging Workshop",
+    text: "LED packaging and process control environment.",
+    src: "/images/factory/led-packaging-workshop.jpg",
+    alt: "KINGBRIGHT LED packaging workshop and production environment"
+  },
+  ...manufacturingImages,
+  ...qcImages
+];
+
 export default function AboutFactoryPage() {
   const schema = {
     "@context": "https://schema.org",
@@ -109,8 +174,17 @@ export default function AboutFactoryPage() {
               <a className="factory-btn factory-btn-ghost" href="#engineering">Request Engineering Support</a>
             </div>
           </div>
-          <div className="factory-panel">
-            <Factory size={48} />
+          <div className="factory-panel factory-hero-panel">
+            <div className="factory-panel-media">
+              <img
+                src="/images/factory/production-workshop.png"
+                alt="KINGBRIGHT LED production workshop for LED packaging and manufacturing"
+                width="900"
+                height="520"
+                loading="eager"
+                fetchPriority="high"
+              />
+            </div>
             <strong>Manufacturer Trust for Global Buyers</strong>
             <p>Factory capability, specification-driven communication and process control for buyers who need stable parts, clear documentation and repeatable supply.</p>
           </div>
@@ -143,6 +217,11 @@ export default function AboutFactoryPage() {
               </article>
             ))}
           </div>
+          <div className="factory-media-grid">
+            {manufacturingImages.map((image) => (
+              <FactoryImageCard key={image.title} {...image} />
+            ))}
+          </div>
         </div>
       </section>
 
@@ -167,6 +246,11 @@ export default function AboutFactoryPage() {
                 </div>
               </div>
             ))}
+            <div className="factory-qc-media-grid">
+              {qcImages.map((image) => (
+                <FactoryImageCard key={image.title} {...image} compact />
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -225,14 +309,10 @@ export default function AboutFactoryPage() {
 
       <section className="factory-section">
         <div className="factory-wrap">
-          <SectionTitle eyebrow="Factory Gallery" title="Workshop, Production and Testing Image Placeholders" />
+          <SectionTitle eyebrow="Factory Gallery" title="Workshop, Production and Testing Facilities" />
           <div className="factory-gallery">
-            {["Production Workshop", "SMT Production Lines", "LED Packaging Lines", "Aging Test", "Reliability Testing", "Final Inspection"].map((item) => (
-              <div key={item}>
-                <Factory size={38} />
-                <strong>{item}</strong>
-                <span>Image placeholder</span>
-              </div>
+            {galleryImages.map((image) => (
+              <FactoryImageCard key={image.title} {...image} />
             ))}
           </div>
         </div>
@@ -267,6 +347,30 @@ function SectionTitle({ eyebrow, title }: { eyebrow: string; title: string }) {
   );
 }
 
+function FactoryImageCard({
+  title,
+  text,
+  src,
+  alt,
+  compact = false
+}: {
+  title: string;
+  text: string;
+  src: string;
+  alt: string;
+  compact?: boolean;
+}) {
+  return (
+    <figure className={compact ? "factory-image-card factory-image-card-compact" : "factory-image-card"}>
+      <img src={src} alt={alt} width="720" height="460" loading="lazy" />
+      <figcaption>
+        <strong>{title}</strong>
+        <span>{text}</span>
+      </figcaption>
+    </figure>
+  );
+}
+
 const styles = `
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0}.factory-page{min-height:100vh;background:#f7f9fc;color:#142033;font-family:Inter,Arial,Helvetica,sans-serif}.factory-page a{text-decoration:none;color:inherit}.factory-wrap{width:min(1180px,calc(100% - 44px));margin:0 auto}.factory-hero{position:relative;background:#142033;color:#fff}.factory-hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px),radial-gradient(circle at 75% 20%,rgba(30,99,214,.34),transparent 36%),linear-gradient(120deg,rgba(20,32,51,.96),rgba(20,32,51,.78));background-size:44px 44px,44px 44px,auto,auto}.factory-hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .75fr;gap:56px;padding:88px 0}.factory-eyebrow,.factory-label{margin:0;color:#f05a28;font-size:13px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}.factory-eyebrow{display:inline-block;color:#dce5f0;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);padding:9px 12px}.factory-hero h1{margin:24px 0 0;font-size:56px;line-height:1.05}.factory-lead{max-width:720px;margin:24px 0 0;color:#d4deea;font-size:18px;line-height:1.75}.factory-cta-row{display:flex;flex-wrap:wrap;gap:13px;margin-top:34px}.factory-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;padding:13px 20px;font-weight:900;font-size:15px;background:#142033;color:#fff}.factory-btn-primary{background:#f05a28;color:#fff}.factory-btn-ghost{border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.1);color:#fff}.factory-btn-dark{background:#142033;color:#fff}.factory-panel{align-self:center;background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(244,247,251,.92));color:#142033;border:1px solid rgba(255,255,255,.22);padding:34px;box-shadow:0 18px 55px rgba(20,32,51,.2)}.factory-panel svg{color:#1e63d6}.factory-panel strong{display:block;margin-top:24px;font-size:27px;line-height:1.15}.factory-panel p{color:#536174;line-height:1.7}.factory-section{padding:82px 0}.factory-white{background:#fff}.factory-title{max-width:840px}.factory-section h2{margin:14px 0 0;font-size:40px;line-height:1.15}.factory-muted,.factory-card p,.factory-stat p{color:#536174;line-height:1.7}.factory-stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}.factory-stat{background:#fff;border:1px solid #dde3eb;border-left:4px solid #f05a28;padding:24px;box-shadow:0 4px 16px rgba(20,32,51,.04)}.factory-stat strong{font-size:20px}.factory-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:40px}.factory-card{background:#fff;border:1px solid #dde3eb;padding:24px;box-shadow:0 4px 16px rgba(20,32,51,.04)}.factory-card h2{font-size:20px}.factory-blue{color:#1e63d6}.factory-two{display:grid;grid-template-columns:.9fr 1.1fr;gap:46px}.factory-qc-list{display:grid;gap:14px}.factory-qc{display:flex;gap:18px;background:#fff;border:1px solid #dde3eb;padding:20px;box-shadow:0 4px 16px rgba(20,32,51,.04)}.factory-qc span{display:grid;place-items:center;flex:0 0 42px;height:42px;background:#1e63d6;color:#fff;font-weight:900}.factory-qc p{margin:8px 0 0;color:#536174;line-height:1.6}.factory-dark{background:#142033;color:#fff}.factory-dark h2{color:#fff}.factory-dark p:not(.factory-label){color:#d4deea;line-height:1.7}.factory-dark-list{display:grid;gap:14px}.factory-dark-list div{display:flex;gap:12px;align-items:center;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.07);padding:18px;font-weight:900}.factory-cert-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}.factory-cert{background:#fff;border:1px solid #dde3eb;padding:26px;box-shadow:0 4px 16px rgba(20,32,51,.04)}.factory-cert svg{color:#1e63d6}.factory-cert strong,.factory-cert span{display:block}.factory-cert strong{margin-top:18px;font-size:20px}.factory-cert span{margin-top:8px;color:#536174}.factory-market-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.factory-market-grid div{display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #dde3eb;padding:18px;font-weight:900}.factory-market-grid svg{color:#1e63d6}.factory-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}.factory-gallery div{display:grid;place-items:center;min-height:220px;background:linear-gradient(135deg,#eef2f7,#fff);border:1px solid #dde3eb;text-align:center;padding:22px}.factory-gallery svg{color:#1e63d6}.factory-gallery strong,.factory-gallery span{display:block}.factory-gallery strong{margin-top:16px}.factory-gallery span{margin-top:8px;color:#536174}.factory-contact{padding-top:0}.factory-contact-box{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;background:#fff;padding:34px;box-shadow:0 18px 55px rgba(20,32,51,.12)}.factory-contact-box p:not(.factory-label){color:#536174;line-height:1.7}.factory-contact-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-end}@media(max-width:1100px){.factory-grid{grid-template-columns:repeat(3,1fr)}.factory-stat-grid,.factory-cert-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:900px){.factory-hero-grid,.factory-two,.factory-contact-box{grid-template-columns:1fr}.factory-hero h1{font-size:42px}.factory-contact-actions{justify-content:flex-start}.factory-gallery{grid-template-columns:1fr 1fr}}@media(max-width:640px){.factory-wrap{width:min(100% - 32px,1180px)}.factory-hero-grid{padding:62px 0}.factory-hero h1{font-size:34px}.factory-lead{font-size:16px}.factory-section{padding:62px 0}.factory-section h2{font-size:30px}.factory-grid,.factory-stat-grid,.factory-cert-grid,.factory-market-grid,.factory-gallery{grid-template-columns:1fr}.factory-btn{width:100%}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0}.factory-page{min-height:100vh;background:#f7f9fc;color:#142033;font-family:Inter,Arial,Helvetica,sans-serif}.factory-page a{text-decoration:none;color:inherit}.factory-wrap{width:min(1180px,calc(100% - 44px));margin:0 auto}.factory-hero{position:relative;background:#142033;color:#fff}.factory-hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px),radial-gradient(circle at 75% 20%,rgba(30,99,214,.34),transparent 36%),linear-gradient(120deg,rgba(20,32,51,.96),rgba(20,32,51,.78));background-size:44px 44px,44px 44px,auto,auto}.factory-hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .75fr;gap:56px;padding:88px 0}.factory-eyebrow,.factory-label{margin:0;color:#f05a28;font-size:13px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}.factory-eyebrow{display:inline-block;color:#dce5f0;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);padding:9px 12px}.factory-hero h1{margin:24px 0 0;font-size:56px;line-height:1.05}.factory-lead{max-width:720px;margin:24px 0 0;color:#d4deea;font-size:18px;line-height:1.75}.factory-cta-row{display:flex;flex-wrap:wrap;gap:13px;margin-top:34px}.factory-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;padding:13px 20px;font-weight:900;font-size:15px;background:#142033;color:#fff}.factory-btn-primary{background:#f05a28;color:#fff}.factory-btn-ghost{border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.1);color:#fff}.factory-btn-dark{background:#142033;color:#fff}.factory-panel{align-self:center;background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(244,247,251,.92));color:#142033;border:1px solid rgba(255,255,255,.22);padding:34px;box-shadow:0 18px 55px rgba(20,32,51,.2)}.factory-hero-panel{padding:0;overflow:hidden}.factory-panel-media{background:#e8eef6}.factory-panel-media img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}.factory-hero-panel strong,.factory-hero-panel p{margin-left:30px;margin-right:30px}.factory-hero-panel p{margin-bottom:30px}.factory-panel svg{color:#1e63d6}.factory-panel strong{display:block;margin-top:24px;font-size:27px;line-height:1.15}.factory-panel p{color:#536174;line-height:1.7}.factory-section{padding:82px 0}.factory-white{background:#fff}.factory-title{max-width:840px}.factory-section h2{margin:14px 0 0;font-size:40px;line-height:1.15}.factory-muted,.factory-card p,.factory-stat p{color:#536174;line-height:1.7}.factory-stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}.factory-stat{background:#fff;border:1px solid #dde3eb;border-left:4px solid #f05a28;padding:24px;box-shadow:0 4px 16px rgba(20,32,51,.04)}.factory-stat strong{font-size:20px}.factory-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:40px}.factory-card{background:#fff;border:1px solid #dde3eb;padding:24px;box-shadow:0 4px 16px rgba(20,32,51,.04)}.factory-card h2{font-size:20px}.factory-blue{color:#1e63d6}.factory-media-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}.factory-image-card{margin:0;background:#fff;border:1px solid #dde3eb;box-shadow:0 4px 16px rgba(20,32,51,.05);overflow:hidden}.factory-image-card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#e8eef6}.factory-image-card figcaption{display:block;padding:18px}.factory-image-card strong,.factory-image-card span{display:block}.factory-image-card strong{font-size:18px;line-height:1.25}.factory-image-card span{margin-top:8px;color:#536174;font-size:14px;line-height:1.6}.factory-image-card-compact img{aspect-ratio:16/9}.factory-image-card-compact figcaption{padding:14px}.factory-two{display:grid;grid-template-columns:.9fr 1.1fr;gap:46px}.factory-qc-list{display:grid;gap:14px}.factory-qc{display:flex;gap:18px;background:#fff;border:1px solid #dde3eb;padding:20px;box-shadow:0 4px 16px rgba(20,32,51,.04)}.factory-qc span{display:grid;place-items:center;flex:0 0 42px;height:42px;background:#1e63d6;color:#fff;font-weight:900}.factory-qc p{margin:8px 0 0;color:#536174;line-height:1.6}.factory-qc-media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.factory-dark{background:#142033;color:#fff}.factory-dark h2{color:#fff}.factory-dark p:not(.factory-label){color:#d4deea;line-height:1.7}.factory-dark-list{display:grid;gap:14px}.factory-dark-list div{display:flex;gap:12px;align-items:center;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.07);padding:18px;font-weight:900}.factory-cert-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}.factory-cert{background:#fff;border:1px solid #dde3eb;padding:26px;box-shadow:0 4px 16px rgba(20,32,51,.04)}.factory-cert svg{color:#1e63d6}.factory-cert strong,.factory-cert span{display:block}.factory-cert strong{margin-top:18px;font-size:20px}.factory-cert span{margin-top:8px;color:#536174}.factory-market-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.factory-market-grid div{display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #dde3eb;padding:18px;font-weight:900}.factory-market-grid svg{color:#1e63d6}.factory-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}.factory-contact{padding-top:0}.factory-contact-box{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;background:#fff;padding:34px;box-shadow:0 18px 55px rgba(20,32,51,.12)}.factory-contact-box p:not(.factory-label){color:#536174;line-height:1.7}.factory-contact-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-end}@media(max-width:1100px){.factory-grid{grid-template-columns:repeat(3,1fr)}.factory-stat-grid,.factory-cert-grid,.factory-media-grid{grid-template-columns:repeat(2,1fr)}.factory-qc-media-grid{grid-template-columns:1fr 1fr}}@media(max-width:900px){.factory-hero-grid,.factory-two,.factory-contact-box{grid-template-columns:1fr}.factory-hero h1{font-size:42px}.factory-contact-actions{justify-content:flex-start}.factory-gallery{grid-template-columns:1fr 1fr}}@media(max-width:640px){.factory-wrap{width:min(100% - 32px,1180px)}.factory-hero-grid{padding:62px 0}.factory-hero h1{font-size:34px}.factory-lead{font-size:16px}.factory-section{padding:62px 0}.factory-section h2{font-size:30px}.factory-grid,.factory-stat-grid,.factory-cert-grid,.factory-market-grid,.factory-gallery,.factory-media-grid,.factory-qc-media-grid{grid-template-columns:1fr}.factory-btn{width:100%}.factory-hero-panel strong,.factory-hero-panel p{margin-left:22px;margin-right:22px}}
 `;
