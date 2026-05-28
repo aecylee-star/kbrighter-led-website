@@ -103,6 +103,33 @@ const manufacturingImages = [
   }
 ];
 
+const ledPackagingProcessImages = [
+  {
+    title: "LED Die Bonding Process",
+    text: "LED chips are positioned and bonded with controlled placement accuracy to support stable electrical connection, thermal transfer and repeatable light output.",
+    src: "/images/led-production-line/led-die-bonding-process.jpg",
+    alt: "KINGBRIGHT LED die bonding process for SMD LED packaging"
+  },
+  {
+    title: "LED Wire Bonding Process",
+    text: "Wire bonding is monitored to help maintain reliable chip-to-electrode connection and reduce early electrical failure risk in mass production.",
+    src: "/images/led-production-line/led-wire-bonding-process.jpg",
+    alt: "KINGBRIGHT LED wire bonding process for LED component manufacturing"
+  },
+  {
+    title: "LED Dispensing Process",
+    text: "Encapsulation and dispensing control support lens shape, phosphor distribution, color consistency and long-term optical performance.",
+    src: "/images/led-production-line/led-dispensing-process.png",
+    alt: "KINGBRIGHT LED dispensing process and encapsulation production line"
+  },
+  {
+    title: "LED Binning Process",
+    text: "Photoelectric binning helps separate LEDs by voltage, brightness and color parameters so buyers receive more consistent production batches.",
+    src: "/images/led-production-line/led-binning-process.png",
+    alt: "KINGBRIGHT LED binning process for brightness and color consistency"
+  }
+];
+
 const qcImages = [
   {
     title: "AOI Inspection",
@@ -124,6 +151,27 @@ const qcImages = [
   }
 ];
 
+const ledInspectionImages = [
+  {
+    title: "Incoming Material Inspection",
+    text: "Critical incoming materials are checked before production release, including visual condition, specification matching and key process requirements.",
+    src: "/images/led-production-line/led-incoming-quality-control.png",
+    alt: "KINGBRIGHT incoming material inspection for LED packaging quality control"
+  },
+  {
+    title: "In-Process Quality Control",
+    text: "Production inspection is carried out during LED packaging to monitor workmanship, process stability and product consistency before final packing.",
+    src: "/images/led-production-line/led-in-process-quality-control.png",
+    alt: "KINGBRIGHT in-process quality control for LED manufacturing"
+  },
+  {
+    title: "Final Shipment Inspection",
+    text: "Final inspection confirms appearance, packaging, label information and shipment readiness before products are released to overseas customers.",
+    src: "/images/led-production-line/led-final-inspection.png",
+    alt: "KINGBRIGHT final shipment inspection for LED components"
+  }
+];
+
 const galleryImages = [
   {
     title: "Production Workshop",
@@ -137,6 +185,8 @@ const galleryImages = [
     src: "/images/factory/led-packaging-workshop.jpg",
     alt: "KINGBRIGHT LED packaging workshop and production environment"
   },
+  ...ledPackagingProcessImages,
+  ...ledInspectionImages,
   ...manufacturingImages,
   ...qcImages
 ];
@@ -225,6 +275,22 @@ export default function AboutFactoryPage() {
         </div>
       </section>
 
+      <section className="factory-section">
+        <div className="factory-wrap">
+          <SectionTitle eyebrow="LED Packaging Process" title="Manufacturing Process for Consistent LED Component Production" />
+          <p className="factory-muted factory-process-lead">
+            KINGBRIGHT controls the key LED packaging steps from chip bonding to final
+            photoelectric binning. This process-oriented approach helps overseas buyers
+            evaluate production stability, brightness consistency and batch repeatability.
+          </p>
+          <div className="factory-media-grid">
+            {ledPackagingProcessImages.map((image) => (
+              <FactoryImageCard key={image.title} {...image} />
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="quality" className="factory-section">
         <div className="factory-wrap factory-two">
           <div>
@@ -251,6 +317,26 @@ export default function AboutFactoryPage() {
                 <FactoryImageCard key={image.title} {...image} compact />
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="factory-section factory-white">
+        <div className="factory-wrap">
+          <SectionTitle eyebrow="Inspection Workflow" title="Quality Control from Incoming Materials to Shipment Release" />
+          <p className="factory-muted factory-process-lead">
+            Incoming inspection, in-process control and final shipment checks are used to
+            reduce production risk before goods are delivered. For OEM buyers, this gives
+            clearer control over batch quality, packaging condition and supply continuity.
+          </p>
+          <div className="factory-media-grid factory-inspection-grid">
+            {ledInspectionImages.map((image) => (
+              <FactoryImageCard key={image.title} {...image} />
+            ))}
+          </div>
+          <div className="factory-link-row">
+            <a className="factory-btn factory-btn-primary" href="/quality-control">Open Full Quality Control Page <ArrowRight size={18} /></a>
+            <a className="factory-btn factory-btn-dark" href="#contact">Request Quality Documents</a>
           </div>
         </div>
       </section>
@@ -372,5 +458,5 @@ function FactoryImageCard({
 }
 
 const styles = `
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0}.factory-page{min-height:100vh;background:#f7f9fc;color:#142033;font-family:Inter,Arial,Helvetica,sans-serif}.factory-page a{text-decoration:none;color:inherit}.factory-wrap{width:min(1180px,calc(100% - 44px));margin:0 auto}.factory-hero{position:relative;background:#142033;color:#fff}.factory-hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px),radial-gradient(circle at 75% 20%,rgba(30,99,214,.34),transparent 36%),linear-gradient(120deg,rgba(20,32,51,.96),rgba(20,32,51,.78));background-size:44px 44px,44px 44px,auto,auto}.factory-hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .75fr;gap:56px;padding:88px 0}.factory-eyebrow,.factory-label{margin:0;color:#f05a28;font-size:13px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}.factory-eyebrow{display:inline-block;color:#dce5f0;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);padding:9px 12px}.factory-hero h1{margin:24px 0 0;font-size:56px;line-height:1.05}.factory-lead{max-width:720px;margin:24px 0 0;color:#d4deea;font-size:18px;line-height:1.75}.factory-cta-row{display:flex;flex-wrap:wrap;gap:13px;margin-top:34px}.factory-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;padding:13px 20px;font-weight:900;font-size:15px;background:#142033;color:#fff}.factory-btn-primary{background:#f05a28;color:#fff}.factory-btn-ghost{border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.1);color:#fff}.factory-btn-dark{background:#142033;color:#fff}.factory-panel{align-self:center;background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(244,247,251,.92));color:#142033;border:1px solid rgba(255,255,255,.22);padding:34px;box-shadow:0 18px 55px rgba(20,32,51,.2)}.factory-hero-panel{padding:0;overflow:hidden}.factory-panel-media{background:#e8eef6}.factory-panel-media img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}.factory-hero-panel strong,.factory-hero-panel p{margin-left:30px;margin-right:30px}.factory-hero-panel p{margin-bottom:30px}.factory-panel svg{color:#1e63d6}.factory-panel strong{display:block;margin-top:24px;font-size:27px;line-height:1.15}.factory-panel p{color:#536174;line-height:1.7}.factory-section{padding:82px 0}.factory-white{background:#fff}.factory-title{max-width:840px}.factory-section h2{margin:14px 0 0;font-size:40px;line-height:1.15}.factory-muted,.factory-card p,.factory-stat p{color:#536174;line-height:1.7}.factory-stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}.factory-stat{background:#fff;border:1px solid #dde3eb;border-left:4px solid #f05a28;padding:24px;box-shadow:0 4px 16px rgba(20,32,51,.04)}.factory-stat strong{font-size:20px}.factory-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:40px}.factory-card{background:#fff;border:1px solid #dde3eb;padding:24px;box-shadow:0 4px 16px rgba(20,32,51,.04)}.factory-card h2{font-size:20px}.factory-blue{color:#1e63d6}.factory-media-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}.factory-image-card{margin:0;background:#fff;border:1px solid #dde3eb;box-shadow:0 4px 16px rgba(20,32,51,.05);overflow:hidden}.factory-image-card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#e8eef6}.factory-image-card figcaption{display:block;padding:18px}.factory-image-card strong,.factory-image-card span{display:block}.factory-image-card strong{font-size:18px;line-height:1.25}.factory-image-card span{margin-top:8px;color:#536174;font-size:14px;line-height:1.6}.factory-image-card-compact img{aspect-ratio:16/9}.factory-image-card-compact figcaption{padding:14px}.factory-two{display:grid;grid-template-columns:.9fr 1.1fr;gap:46px}.factory-qc-list{display:grid;gap:14px}.factory-qc{display:flex;gap:18px;background:#fff;border:1px solid #dde3eb;padding:20px;box-shadow:0 4px 16px rgba(20,32,51,.04)}.factory-qc span{display:grid;place-items:center;flex:0 0 42px;height:42px;background:#1e63d6;color:#fff;font-weight:900}.factory-qc p{margin:8px 0 0;color:#536174;line-height:1.6}.factory-qc-media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.factory-dark{background:#142033;color:#fff}.factory-dark h2{color:#fff}.factory-dark p:not(.factory-label){color:#d4deea;line-height:1.7}.factory-dark-list{display:grid;gap:14px}.factory-dark-list div{display:flex;gap:12px;align-items:center;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.07);padding:18px;font-weight:900}.factory-cert-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}.factory-cert{background:#fff;border:1px solid #dde3eb;padding:26px;box-shadow:0 4px 16px rgba(20,32,51,.04)}.factory-cert svg{color:#1e63d6}.factory-cert strong,.factory-cert span{display:block}.factory-cert strong{margin-top:18px;font-size:20px}.factory-cert span{margin-top:8px;color:#536174}.factory-market-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.factory-market-grid div{display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #dde3eb;padding:18px;font-weight:900}.factory-market-grid svg{color:#1e63d6}.factory-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}.factory-contact{padding-top:0}.factory-contact-box{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;background:#fff;padding:34px;box-shadow:0 18px 55px rgba(20,32,51,.12)}.factory-contact-box p:not(.factory-label){color:#536174;line-height:1.7}.factory-contact-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-end}@media(max-width:1100px){.factory-grid{grid-template-columns:repeat(3,1fr)}.factory-stat-grid,.factory-cert-grid,.factory-media-grid{grid-template-columns:repeat(2,1fr)}.factory-qc-media-grid{grid-template-columns:1fr 1fr}}@media(max-width:900px){.factory-hero-grid,.factory-two,.factory-contact-box{grid-template-columns:1fr}.factory-hero h1{font-size:42px}.factory-contact-actions{justify-content:flex-start}.factory-gallery{grid-template-columns:1fr 1fr}}@media(max-width:640px){.factory-wrap{width:min(100% - 32px,1180px)}.factory-hero-grid{padding:62px 0}.factory-hero h1{font-size:34px}.factory-lead{font-size:16px}.factory-section{padding:62px 0}.factory-section h2{font-size:30px}.factory-grid,.factory-stat-grid,.factory-cert-grid,.factory-market-grid,.factory-gallery,.factory-media-grid,.factory-qc-media-grid{grid-template-columns:1fr}.factory-btn{width:100%}.factory-hero-panel strong,.factory-hero-panel p{margin-left:22px;margin-right:22px}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0}.factory-page{min-height:100vh;background:#f7f9fc;color:#142033;font-family:Inter,Arial,Helvetica,sans-serif}.factory-page a{text-decoration:none;color:inherit}.factory-wrap{width:min(1180px,calc(100% - 44px));margin:0 auto}.factory-hero{position:relative;background:#142033;color:#fff}.factory-hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px),radial-gradient(circle at 75% 20%,rgba(30,99,214,.34),transparent 36%),linear-gradient(120deg,rgba(20,32,51,.96),rgba(20,32,51,.78));background-size:44px 44px,44px 44px,auto,auto}.factory-hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .75fr;gap:56px;padding:88px 0}.factory-eyebrow,.factory-label{margin:0;color:#f05a28;font-size:13px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}.factory-eyebrow{display:inline-block;color:#dce5f0;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);padding:9px 12px}.factory-hero h1{margin:24px 0 0;font-size:56px;line-height:1.05}.factory-lead{max-width:720px;margin:24px 0 0;color:#d4deea;font-size:18px;line-height:1.75}.factory-cta-row{display:flex;flex-wrap:wrap;gap:13px;margin-top:34px}.factory-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;padding:13px 20px;font-weight:900;font-size:15px;background:#142033;color:#fff}.factory-btn-primary{background:#f05a28;color:#fff}.factory-btn-ghost{border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.1);color:#fff}.factory-btn-dark{background:#142033;color:#fff}.factory-panel{align-self:center;background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(244,247,251,.92));color:#142033;border:1px solid rgba(255,255,255,.22);padding:34px;box-shadow:0 18px 55px rgba(20,32,51,.2)}.factory-hero-panel{padding:0;overflow:hidden}.factory-panel-media{background:#e8eef6}.factory-panel-media img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}.factory-hero-panel strong,.factory-hero-panel p{margin-left:30px;margin-right:30px}.factory-hero-panel p{margin-bottom:30px}.factory-panel svg{color:#1e63d6}.factory-panel strong{display:block;margin-top:24px;font-size:27px;line-height:1.15}.factory-panel p{color:#536174;line-height:1.7}.factory-section{padding:82px 0}.factory-white{background:#fff}.factory-title{max-width:840px}.factory-section h2{margin:14px 0 0;font-size:40px;line-height:1.15}.factory-muted,.factory-card p,.factory-stat p{color:#536174;line-height:1.7}.factory-process-lead{max-width:860px;margin-top:18px}.factory-link-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.factory-stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}.factory-stat{background:#fff;border:1px solid #dde3eb;border-left:4px solid #f05a28;padding:24px;box-shadow:0 4px 16px rgba(20,32,51,.04)}.factory-stat strong{font-size:20px}.factory-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:40px}.factory-card{background:#fff;border:1px solid #dde3eb;padding:24px;box-shadow:0 4px 16px rgba(20,32,51,.04)}.factory-card h2{font-size:20px}.factory-blue{color:#1e63d6}.factory-media-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}.factory-inspection-grid{grid-template-columns:repeat(3,1fr)}.factory-image-card{margin:0;background:#fff;border:1px solid #dde3eb;box-shadow:0 4px 16px rgba(20,32,51,.05);overflow:hidden}.factory-image-card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#e8eef6}.factory-image-card figcaption{display:block;padding:18px}.factory-image-card strong,.factory-image-card span{display:block}.factory-image-card strong{font-size:18px;line-height:1.25}.factory-image-card span{margin-top:8px;color:#536174;font-size:14px;line-height:1.6}.factory-image-card-compact img{aspect-ratio:16/9}.factory-image-card-compact figcaption{padding:14px}.factory-two{display:grid;grid-template-columns:.9fr 1.1fr;gap:46px}.factory-qc-list{display:grid;gap:14px}.factory-qc{display:flex;gap:18px;background:#fff;border:1px solid #dde3eb;padding:20px;box-shadow:0 4px 16px rgba(20,32,51,.04)}.factory-qc span{display:grid;place-items:center;flex:0 0 42px;height:42px;background:#1e63d6;color:#fff;font-weight:900}.factory-qc p{margin:8px 0 0;color:#536174;line-height:1.6}.factory-qc-media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.factory-dark{background:#142033;color:#fff}.factory-dark h2{color:#fff}.factory-dark p:not(.factory-label){color:#d4deea;line-height:1.7}.factory-dark-list{display:grid;gap:14px}.factory-dark-list div{display:flex;gap:12px;align-items:center;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.07);padding:18px;font-weight:900}.factory-cert-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}.factory-cert{background:#fff;border:1px solid #dde3eb;padding:26px;box-shadow:0 4px 16px rgba(20,32,51,.04)}.factory-cert svg{color:#1e63d6}.factory-cert strong,.factory-cert span{display:block}.factory-cert strong{margin-top:18px;font-size:20px}.factory-cert span{margin-top:8px;color:#536174}.factory-market-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.factory-market-grid div{display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #dde3eb;padding:18px;font-weight:900}.factory-market-grid svg{color:#1e63d6}.factory-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}.factory-contact{padding-top:0}.factory-contact-box{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;background:#fff;padding:34px;box-shadow:0 18px 55px rgba(20,32,51,.12)}.factory-contact-box p:not(.factory-label){color:#536174;line-height:1.7}.factory-contact-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-end}@media(max-width:1100px){.factory-grid{grid-template-columns:repeat(3,1fr)}.factory-stat-grid,.factory-cert-grid,.factory-media-grid{grid-template-columns:repeat(2,1fr)}.factory-inspection-grid,.factory-qc-media-grid{grid-template-columns:1fr 1fr}}@media(max-width:900px){.factory-hero-grid,.factory-two,.factory-contact-box{grid-template-columns:1fr}.factory-hero h1{font-size:42px}.factory-contact-actions{justify-content:flex-start}.factory-gallery{grid-template-columns:1fr 1fr}}@media(max-width:640px){.factory-wrap{width:min(100% - 32px,1180px)}.factory-hero-grid{padding:62px 0}.factory-hero h1{font-size:34px}.factory-lead{font-size:16px}.factory-section{padding:62px 0}.factory-section h2{font-size:30px}.factory-grid,.factory-stat-grid,.factory-cert-grid,.factory-market-grid,.factory-gallery,.factory-media-grid,.factory-inspection-grid,.factory-qc-media-grid{grid-template-columns:1fr}.factory-btn{width:100%}.factory-hero-panel strong,.factory-hero-panel p{margin-left:22px;margin-right:22px}}
 `;

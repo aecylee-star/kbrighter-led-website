@@ -170,6 +170,7 @@ export default function Home() {
             {["Incoming material inspection", "LED packaging process control", "Photoelectric parameter testing", "Aging and reliability verification"].map((step, index) => (
               <div className="kb-step" key={step}><span>0{index + 1}</span>{step}</div>
             ))}
+            <a className="kb-btn kb-btn-primary" href="/quality-control">Review Manufacturing & Quality Control <ArrowRight size={18} /></a>
           </div>
         </div>
       </section>

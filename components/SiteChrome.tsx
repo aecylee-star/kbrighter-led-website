@@ -111,7 +111,8 @@ export function SiteFooter() {
           title="Company"
           links={[
             ["About Factory", "/about-factory"],
-            ["Quality Control", "/about-factory#quality"],
+            ["Quality Control", "/quality-control"],
+            ["Manufacturing Process", "/quality-control#process"],
             ["Applications", "/applications"],
             ["FAQ", "/faq"]
           ]}

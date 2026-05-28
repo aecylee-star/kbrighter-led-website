@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/products/smd-led/3030-smd-led",
     "/applications",
     "/about-factory",
+    "/quality-control",
     "/download-center",
     "/faq"
   ];
