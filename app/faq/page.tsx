@@ -107,6 +107,7 @@ export default function FAQPage() {
           <div className="res-link-row">
             <Link href="/products/smd-led/2835-smd-led">Review 2835 0.2W SMD LED Specs</Link>
             <Link href="/products/smd-led/2835-0-5w-smd-led">Review 2835 0.5W SMD LED Specs</Link>
+            <Link href="/products/smd-led/3030-smd-led">Review 3030 SMD LED Specs</Link>
             <Link href="/applications">Explore LED Applications</Link>
             <Link href="/download-center">Download Center</Link>
             <Link href="/about-factory">Factory & Quality</Link>

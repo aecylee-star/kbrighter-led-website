@@ -44,6 +44,12 @@ export const productCategories: ProductCategory[] = [
         specs: ["2.8 x 3.5 x 0.70 mm", "IF 150mA", "55-85 lm by CCT/CRI bin"]
       },
       {
+        name: "3030 SMD LED",
+        description: "3030 6V150mA square-cup white SMD LED for high lumen lighting, street lighting, high bay lighting and OEM modules.",
+        href: "/products/smd-led/3030-smd-led",
+        specs: ["3.0 x 3.0 x 0.6 mm", "IF 150mA", "105-165 lm by CCT/CRI bin"]
+      },
+      {
         name: "3528 SMD LED",
         description: "Compact SMD LED package for indicators, decorative lighting, display backlight and electronics assemblies.",
         href: "/products/smd-led",

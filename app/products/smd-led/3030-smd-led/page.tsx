@@ -16,66 +16,63 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "2835 0.5W SMD LED Manufacturer | KINGBRIGHT",
+  title: "3030 SMD LED Manufacturer | KINGBRIGHT",
   description:
-    "KINGBRIGHT 2835 0.5W SMD LED, product code 9.2835W3V21G-J03, IF 150mA, VF 2.8-3.4V, 120 degree viewing angle, Ra70/Ra80/Ra90 and 2700K-6500K CCT options.",
+    "KINGBRIGHT 3030 SMD LED / 3030 6V150mA SMD LED, product code 9.3030W3V32F, VF 5.8-6.4V, 120 degree viewing angle, Ra70/Ra80/Ra90 and 2700K-6500K CCT options.",
   keywords: [
-    "2835 0.5W SMD LED",
-    "SMD2835 LED",
-    "2835 LED 150mA",
-    "2835 0.5W LED manufacturer",
-    "2835 LED manufacturer",
-    "2835 white SMD LED",
+    "3030 SMD LED",
+    "3030 6V150mA SMD LED",
+    "SMD3030 LED",
+    "3030 LED manufacturer",
+    "3030 white SMD LED",
     "surface mount LED supplier",
-    "LED tube light component",
-    "LED panel light component"
+    "solar street light LED component",
+    "high bay light LED component"
   ],
   openGraph: {
-    title: "2835 0.5W SMD LED Manufacturer | KINGBRIGHT",
+    title: "3030 SMD LED Manufacturer | KINGBRIGHT",
     description:
-      "KINGBRIGHT 2835 0.5W SMD LED with IF 150mA, VF 2.8-3.4V, 120 degree viewing angle, Ra70/Ra80/Ra90 and 2700K-6500K CCT options.",
-    url: "/products/smd-led/2835-0-5w-smd-led",
+      "KINGBRIGHT 3030 6V150mA SMD LED with VF 5.8-6.4V, 120 degree viewing angle, Ra70/Ra80/Ra90 and high luminous flux options.",
+    url: "/products/smd-led/3030-smd-led",
     type: "website"
   }
 };
 
 const specs = [
-  ["Product Code", "9.2835W3V21G-J03"],
-  ["Code Structure", "9.2835XXV21XB-HC4-CY series, 2835 package, 3V class, 1 chip, Ra70/Ra80/Ra90 options"],
-  ["Package Size", "2.8 x 3.5 x 0.70 mm, tolerance +/-0.15 mm unless otherwise noted"],
-  ["Forward Voltage", "2.8V min / 3.4V max at IF=150mA"],
+  ["Product Code", "9.3030W3V32F"],
+  ["Code Structure", "9.3030XXV32XC-HC4-XX series, 3030 package, 6V class, 2 chips, Ra70/Ra80/Ra90 options"],
+  ["Package Size", "3.0 x 3.0 x 0.6 mm, tolerance +/-0.15 mm unless otherwise noted"],
+  ["Forward Voltage", "5.8V min / 6.4V max at IF=150mA"],
   ["Forward Current", "150mA rated forward current"],
+  ["Maximum Operating Current", "240mA max operating current"],
   ["Pulse Forward Current", "180mA max, 10kHz frequency, duty ratio <=10%"],
-  ["Power Dissipation", "500mW / 0.5W"],
+  ["Power Dissipation", "1000mW / 1.0W rated power"],
+  ["Maximum Power", "1.5W max power"],
   ["Color Temperature", "2700K / 3000K / 3500K / 4000K / 4500K / 5000K / 5700K / 6500K"],
   ["Viewing Angle", "120 degrees at IF=150mA"],
-  ["Luminous Flux", "55-85 lm range by CCT and CRI bin at IF=150mA"],
+  ["Luminous Flux", "105-165 lm range by CCT and CRI bin at IF=150mA"],
   ["CRI", "Ra70 / Ra80 / Ra90 options"],
   ["Color Tolerance", "SDCM <=6 at IF=150mA"],
-  ["Reverse Current", "10 uA max at VR=-5V"],
   ["ESD", "HBM 2000V"],
   ["Operating Temperature", "-40 C to +85 C"],
   ["Storage Temperature", "-40 C to +85 C"],
   ["Junction Temperature", "125 C max"],
-  ["Thermal Resistance", "46 C/W"],
-  ["Reverse Voltage", "5V"],
+  ["Thermal Resistance", "18 C/W"],
+  ["Reverse Voltage", "10V"],
   ["Soldering Temperature", "260 C for 10 sec"],
   ["Packaging", "Tape and reel packaging; label includes part number, lot number, IV, VF/IF, CCT/XY, Ra/SD/R9, quantity, date and code"]
 ];
 
 const fluxBins = [
-  ["6500K / 5700K / 5000K", "Ra70", "80-85 lm"],
-  ["6500K / 5700K / 5000K", "Ra80", "75-80 lm"],
-  ["6500K / 5700K / 5000K", "Ra90", "65-70 lm"],
-  ["4000K", "Ra70", "80-85 lm"],
-  ["4000K", "Ra80", "75-80 lm"],
-  ["4000K", "Ra90", "65-70 lm"],
-  ["3500K / 3000K", "Ra70", "75-80 lm"],
-  ["3500K / 3000K", "Ra80", "70-75 lm"],
-  ["3500K / 3000K", "Ra90", "60-65 lm"],
-  ["2700K", "Ra70", "70-75 lm"],
-  ["2700K", "Ra80", "65-70 lm"],
-  ["2700K", "Ra90", "55-60 lm"]
+  ["6500K / 5700K / 5000K / 4000K", "Ra70", "155-165 lm"],
+  ["6500K / 5700K / 5000K / 4000K", "Ra80", "145-155 lm"],
+  ["6500K / 5700K / 5000K / 4000K", "Ra90", "125-135 lm"],
+  ["3500K / 3000K", "Ra70", "145-155 lm"],
+  ["3500K / 3000K", "Ra80", "135-145 lm"],
+  ["3500K / 3000K", "Ra90", "115-125 lm"],
+  ["2700K", "Ra70", "135-145 lm"],
+  ["2700K", "Ra80", "125-135 lm"],
+  ["2700K", "Ra90", "105-115 lm"]
 ];
 
 const features = [
@@ -91,7 +88,7 @@ const features = [
   },
   {
     title: "High Efficiency",
-    text: "0.5W 2835 package delivers up to 80-85 lm depending on CCT and CRI bin.",
+    text: "3030 6V package delivers up to 155-165 lm depending on CCT and CRI bin.",
     icon: Zap
   },
   {
@@ -108,60 +105,62 @@ const features = [
 
 const applications = [
   "Traditional lighting replacement",
-  "Ordinary indoor lighting",
+  "Ordinary lighting",
   "Indoor and outdoor sign board backlight",
+  "Solar street lighting",
+  "High bay lighting",
   "Architectural lighting",
   "Decorative lighting"
 ];
 
 const applicationImages = [
   {
-    src: "/images/products/2835-smd-led/2835-smd-led-application-street-lighting.png",
-    alt: "2835 SMD LED application for outdoor sports field and area lighting",
-    label: "Area Lighting"
+    src: "/images/products/3030-smd-led/3030-smd-led-application-solar-street-light.png",
+    alt: "3030 SMD LED application for solar street light fixture",
+    label: "Solar Street Lighting"
   },
   {
-    src: "/images/products/2835-smd-led/2835-smd-led-application-high-bay-lighting.png",
-    alt: "2835 SMD LED application for high bay industrial lighting fixture",
+    src: "/images/products/3030-smd-led/3030-smd-led-application-high-bay-light.png",
+    alt: "3030 SMD LED application for high bay industrial lighting",
     label: "High Bay Lighting"
   },
   {
-    src: "/images/products/2835-smd-led/2835-smd-led-application-road-lighting.png",
-    alt: "2835 SMD LED application for road lighting and street lighting projects",
-    label: "Road Lighting"
+    src: "/images/products/3030-smd-led/3030-smd-led-application-ceiling-light.png",
+    alt: "3030 SMD LED application for indoor ceiling light and decorative lighting",
+    label: "Ceiling Lighting"
   }
 ];
 
 const productImages = [
   {
-    title: "2835 SMD LED Product Appearance",
-    text: "Real 2835 SMD LED package photo for product appearance review.",
-    src: "/images/products/2835-smd-led/2835-smd-led-product-image.png",
-    alt: "KINGBRIGHT 2835 SMD LED product appearance close-up image"
+    title: "3030 SMD LED Product Appearance",
+    text: "Real 3030 square-cup SMD LED package photo for product appearance review.",
+    src: "/images/products/3030-smd-led/3030-smd-led-product-image.png",
+    alt: "KINGBRIGHT 3030 SMD LED product appearance close-up image"
   },
   {
-    title: "2835 Package Dimensions",
+    title: "3030 Package Dimensions",
     text: "Dimension drawing and recommended soldering pattern for engineering review.",
-    src: "/images/products/2835-smd-led/2835-smd-led-dimension-drawing.png",
-    alt: "KINGBRIGHT 2835 SMD LED package dimensions and soldering pattern drawing"
+    src: "/images/products/3030-smd-led/3030-smd-led-dimension-drawing.png",
+    alt: "KINGBRIGHT 3030 SMD LED package dimensions and soldering pattern drawing"
   },
   {
     title: "Lighting Application Reference",
-    text: "Outdoor lighting application reference for 2835 SMD LED component selection.",
-    src: "/images/products/2835-smd-led/2835-smd-led-application-road-lighting.png",
-    alt: "2835 SMD LED application image for road lighting and outdoor lighting projects"
+    text: "Outdoor and industrial lighting application reference for 3030 SMD LED component selection.",
+    src: "/images/products/3030-smd-led/3030-smd-led-application-solar-street-light.png",
+    alt: "3030 SMD LED application image for solar street lighting projects"
   }
 ];
 
 const faqs = [
-  ["What is the rated current of this 2835 0.5W SMD LED?", "The rated forward current is IF=150mA. Pulse forward current is 180mA max under 10kHz frequency and duty ratio <=10%."],
-  ["What voltage range should engineers design for?", "The datasheet lists forward voltage from 2.8V min to 3.4V max at IF=150mA for this 0.5W 2835 LED."],
+  ["What is the rated current of this 3030 SMD LED?", "The rated forward current is IF=150mA. Maximum operating current is 240mA, and pulse forward current is 180mA max under 10kHz frequency and duty ratio <=10%."],
+  ["What voltage range should engineers design for?", "The datasheet lists forward voltage from 5.8V min to 6.4V max at IF=150mA for this 6V 3030 LED."],
   ["Which CCT and CRI options are available?", "Available CCT options include 2700K, 3000K, 3500K, 4000K, 4500K, 5000K, 5700K and 6500K. CRI options include Ra70, Ra80 and Ra90."],
-  ["What luminous flux can buyers expect?", "Flux depends on CCT and CRI bin. The mass production list ranges from 55-60 lm for 2700K Ra90 to 80-85 lm for several Ra70 cool/neutral white bins at IF=150mA."],
+  ["What luminous flux can buyers expect?", "Flux depends on CCT and CRI bin. The mass production list ranges from 105-115 lm for 2700K Ra90 to 155-165 lm for several Ra70 cool/neutral white bins at IF=150mA."],
   ["What soldering precautions should be followed?", "The Pb-free reflow profile lists a 245-260 C peak temperature, 10-30 seconds within 5 C of peak, and total process time up to 480 seconds from 25 C to peak."],
   ["What packaging information is shown on the label?", "The label includes part number, lot number, luminous flux bin, VF/IF, CCT/XY, Ra/SD/R9, quantity, date and code for production traceability."],
   ["How should opened packages be stored?", "After opening, soldering should be completed as soon as possible, ideally within 12 hours. Remaining material should be sealed or stored at 5-40°C with humidity no more than 30%."],
-  ["Is this 2835 LED suitable for flexible light panels?", "The datasheet notes that the bracket is PCT material and may break when bent, so it is not suitable for flexible light panel type lamps."]
+  ["What applications are recommended for 3030 SMD LED?", "The datasheet recommends traditional lighting replacement, ordinary lighting, indoor and outdoor sign board backlight, architectural lighting and decorative lighting. It is also suitable for high-output lighting projects after thermal review."]
 ];
 
 const relatedProducts = [
@@ -211,13 +210,13 @@ export default function ProductTemplatePage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "2835 0.5W SMD LED",
+    name: "3030 SMD LED / 3030 6V150mA SMD LED",
     brand: {
       "@type": "Brand",
       name: "KINGBRIGHT"
     },
     description:
-      "KINGBRIGHT 2835 0.5W SMD LED with IF=150mA, VF 2.8-3.4V, 120 degree viewing angle, Ra70/Ra80/Ra90 and 2700K-6500K CCT options.",
+      "KINGBRIGHT 3030 SMD LED with IF=150mA, VF 5.8-6.4V, 120 degree viewing angle, Ra70/Ra80/Ra90 and 2700K-6500K CCT options.",
     category: "SMD LED Components",
     manufacturer: {
       "@type": "Organization",
@@ -235,36 +234,36 @@ export default function ProductTemplatePage() {
       <section className="pd-hero">
         <div className="pd-wrap pd-hero-grid">
           <div>
-            <p className="pd-eyebrow">2835 0.5W SMD LED</p>
-            <h1>2835 0.5W SMD LED for High Lumen Lighting and Backlight Projects</h1>
+            <p className="pd-eyebrow">3030 SMD LED</p>
+            <h1>3030 6V150mA SMD LED for High Lumen Lighting Projects</h1>
             <p className="pd-lead">
-              KINGBRIGHT 2835 0.5W SMD LED, code 9.2835W3V21G-J03, is a high-efficiency
-              surface mount LED with IF=150mA drive current, designed for traditional lighting replacement,
-              ordinary lighting, sign board backlight and architectural decorative lighting.
+              KINGBRIGHT 3030 SMD LED, code 9.3030W3V32F, is a 6V high-lumen square-cup
+              surface mount LED with IF=150mA drive current, designed for lighting replacement,
+              ordinary lighting, sign board backlight, solar street lighting and high bay lighting projects.
             </p>
             <div className="pd-spec-pills">
-              <span>Code: 9.2835W3V21G-J03</span>
-              <span>Power: 0.5W / 500mW</span>
+              <span>Code: 9.3030W3V32F</span>
+              <span>Rated Power: 1.0W</span>
+              <span>Max Power: 1.5W</span>
               <span>IF: 150mA</span>
-              <span>VF: 2.8-3.4V</span>
+              <span>VF: 5.8-6.4V</span>
               <span>CCT: 2700K-6500K</span>
               <span>CRI: Ra70 / Ra80 / Ra90</span>
             </div>
             <div className="pd-cta-row">
-              <a className="pd-btn pd-btn-primary" href="#inquiry">Request 0.5W 2835 Quotation <ArrowRight size={18} /></a>
-              <a className="pd-btn pd-btn-ghost" href="#inquiry">Request 0.5W Samples</a>
-              <a className="pd-btn pd-btn-ghost" href="#datasheet">Get 0.5W Datasheet</a>
+              <a className="pd-btn pd-btn-primary" href="#inquiry">Request 3030 LED Quotation <ArrowRight size={18} /></a>
+              <a className="pd-btn pd-btn-ghost" href="#inquiry">Request 3030 Samples</a>
+              <a className="pd-btn pd-btn-ghost" href="#datasheet">Get 3030 Datasheet</a>
               <a className="pd-btn pd-btn-ghost" href="#inquiry">Contact Sales Engineer</a>
-              <a className="pd-btn pd-btn-ghost" href="/products/smd-led/2835-smd-led">Compare 2835 0.2W</a>
-              <a className="pd-btn pd-btn-ghost" href="/products/smd-led/3030-smd-led">Review 3030 SMD LED</a>
+              <a className="pd-btn pd-btn-ghost" href="/products/smd-led/2835-0-5w-smd-led">Compare 2835 0.5W</a>
             </div>
           </div>
           <div className="pd-visual-panel">
             <span className="pd-badge">Engineering Review</span>
             <div className="pd-hero-photo-frame">
               <img
-                src="/images/products/2835-smd-led/2835-smd-led-product-image.png"
-                alt="KINGBRIGHT 2835 SMD LED product image for overseas B2B buyer review"
+                src="/images/products/3030-smd-led/3030-smd-led-product-image.png"
+                alt="KINGBRIGHT 3030 SMD LED product image for overseas B2B buyer review"
                 width="1024"
                 height="958"
                 loading="eager"
@@ -274,7 +273,7 @@ export default function ProductTemplatePage() {
             <div className="pd-visual-info">
               <Factory size={24} />
               <div>
-                <strong>2835 LED Package + Engineering Support</strong>
+                <strong>3030 LED Package + Engineering Support</strong>
                 <p>Small package, high efficiency, low-voltage operation, instant light response, long operation life, lead-free and RoHS compliant.</p>
               </div>
             </div>
@@ -284,7 +283,7 @@ export default function ProductTemplatePage() {
 
       <section className="pd-section">
         <div className="pd-wrap">
-          <SectionTitle eyebrow="Product Images" title="2835 SMD LED Photos, Package Views and Application Context" />
+          <SectionTitle eyebrow="Product Images" title="3030 SMD LED Photos, Package Views and Application Context" />
           <div className="pd-image-grid">
             {productImages.map((image) => (
               <ImageBlock key={image.title} {...image} />
@@ -296,21 +295,21 @@ export default function ProductTemplatePage() {
       <section id="specs" className="pd-section pd-white">
         <div className="pd-wrap pd-two">
           <div>
-            <SectionTitle eyebrow="Technical Specifications" title="Real 2835 0.5W SMD LED Datasheet Parameters" />
+            <SectionTitle eyebrow="Technical Specifications" title="Real 3030 SMD LED Datasheet Parameters" />
             <p className="pd-muted">
-              These values are taken from the KINGBRIGHT 2835 0.5W LED specification for
+              These values are taken from the KINGBRIGHT 3030 6V150mA LED specification for
               mass production supply at TA=25 C. Flux and color values should be
               confirmed by selected CCT, CRI and bin requirements.
             </p>
             <figure className="pd-tech-image">
               <img
-                src="/images/products/2835-smd-led/2835-smd-led-dimension-drawing.png"
-                alt="KINGBRIGHT 2835 SMD LED technical package dimensions and soldering pattern drawing"
+                src="/images/products/3030-smd-led/3030-smd-led-dimension-drawing.png"
+                alt="KINGBRIGHT 3030 SMD LED technical package dimensions and soldering pattern drawing"
                 width="1426"
                 height="1600"
                 loading="lazy"
               />
-              <figcaption>2835 SMD LED package dimensions and recommended soldering pattern for engineering review.</figcaption>
+              <figcaption>3030 SMD LED package dimensions and recommended soldering pattern for engineering review.</figcaption>
             </figure>
           </div>
           <div className="pd-spec-table">
@@ -327,17 +326,17 @@ export default function ProductTemplatePage() {
       <section className="pd-section">
         <div className="pd-wrap pd-two">
           <div>
-            <SectionTitle eyebrow="Dimensions" title="2835 Package and Optical Package Reference" />
+            <SectionTitle eyebrow="Dimensions" title="3030 Square-Cup Package and Solder Pad Reference" />
             <p className="pd-muted">
-              The 2835 product family includes standard flat package and ballhead package
-              options. Final dimensions, solder pad information and recommended PCB layout
+              The 3030 product family uses a compact square-cup SMD package for high-lumen
+              lighting projects. Final dimensions, solder pad information and recommended PCB layout
               should be confirmed from the official datasheet before PCB design.
             </p>
           </div>
           <figure className="pd-dimension-image">
             <img
-              src="/images/products/2835-smd-led/2835-smd-led-dimension-drawing.png"
-              alt="KINGBRIGHT 2835 SMD LED dimension drawing with package outline polarity and solder pad pattern"
+              src="/images/products/3030-smd-led/3030-smd-led-dimension-drawing.png"
+              alt="KINGBRIGHT 3030 SMD LED dimension drawing with package outline polarity and solder pad pattern"
               width="1426"
               height="1600"
               loading="lazy"
@@ -386,11 +385,12 @@ export default function ProductTemplatePage() {
         <div className="pd-wrap pd-two">
           <div>
             <p className="pd-label">Applications</p>
-            <h2>Recommended for Lighting Replacement and Backlight Projects</h2>
+            <h2>Recommended for High Lumen Lighting and Backlight Projects</h2>
             <p>
-              The datasheet recommends this 2835 SMD LED for traditional lighting
+              The datasheet recommends this 3030 SMD LED for traditional lighting
               replacement, ordinary lighting, indoor and outdoor sign board backlight,
-              architectural lighting and decorative lighting.
+              architectural lighting and decorative lighting. Its 6V high-lumen output also
+              supports solar street lights, high bay lights and ceiling lighting projects.
             </p>
             <div className="pd-application-gallery">
               {applicationImages.map((image) => (
@@ -413,14 +413,14 @@ export default function ProductTemplatePage() {
         <div className="pd-wrap pd-download">
           <div>
             <p className="pd-label">Datasheet Download</p>
-            <h2>Request the Official 2835 0.5W SMD LED Datasheet</h2>
+            <h2>Request the Official 3030 SMD LED Datasheet</h2>
             <p>
               The datasheet includes package dimensions, coding rules, electro-optical
               characteristics, absolute maximum ratings, mass production list, CIE binning,
               packaging specifications, reflow soldering instructions and handling precautions.
             </p>
           </div>
-          <a className="pd-btn pd-btn-primary" href="#inquiry"><Download size={18} /> Get Official Datasheet</a>
+          <a className="pd-btn pd-btn-primary" href="/downloads/3030-6v150ma-smd-led-datasheet.pdf"><Download size={18} /> Download 3030 Datasheet</a>
         </div>
       </section>
 
@@ -492,7 +492,7 @@ export default function ProductTemplatePage() {
         <div className="pd-wrap pd-inquiry">
           <div className="pd-inquiry-info">
             <p className="pd-label">Product Inquiry</p>
-            <h2>Send Your 2835 0.5W SMD LED Requirement</h2>
+            <h2>Send Your 3030 SMD LED Requirement</h2>
             <p>
               Share your required CCT, CRI, luminous flux bin, quantity, application,
               storage or soldering requirements and sample request details.
@@ -509,12 +509,12 @@ export default function ProductTemplatePage() {
               <Field label="Email" name="email" placeholder="name@company.com" type="email" />
               <Field label="WhatsApp" name="whatsapp" placeholder="+86 135 3014 4658" />
             </div>
-            <Field label="Product Requirement" name="product_requirement" placeholder="2835 SMD LED 0.5W, CCT, CRI, flux bin, quantity..." />
+            <Field label="Product Requirement" name="product_requirement" placeholder="3030 SMD LED 6V150mA, CCT, CRI, flux bin, quantity..." />
             <label>
               Message
               <textarea name="message" placeholder="Please describe CCT, CRI, flux range, application, quantity, sample request, datasheet needs and any soldering or storage requirements." />
             </label>
-            <button className="pd-btn pd-btn-primary" type="submit">Submit 2835 LED RFQ <ArrowRight size={18} /></button>
+            <button className="pd-btn pd-btn-primary" type="submit">Submit 3030 LED RFQ <ArrowRight size={18} /></button>
           </form>
         </div>
       </section>
