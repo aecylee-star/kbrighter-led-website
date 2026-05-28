@@ -124,6 +124,7 @@ export function SiteFooter() {
             ["2835 0.2W Datasheet", "/products/smd-led/2835-smd-led"],
             ["2835 0.5W Datasheet", "/products/smd-led/2835-0-5w-smd-led"],
             ["3030 SMD LED Datasheet", "/products/smd-led/3030-smd-led"],
+            ["3535 SMD LED Datasheet", "/products/smd-led/3535-smd-led"],
             ["Company Profile", "/download-center"],
             ["Certifications", "/download-center"]
           ]}

@@ -255,6 +255,7 @@ export default function ProductTemplatePage() {
               <a className="pd-btn pd-btn-ghost" href="#inquiry">Request 3030 Samples</a>
               <a className="pd-btn pd-btn-ghost" href="#datasheet">Get 3030 Datasheet</a>
               <a className="pd-btn pd-btn-ghost" href="#inquiry">Contact Sales Engineer</a>
+              <a className="pd-btn pd-btn-ghost" href="/products/smd-led/3535-smd-led">Compare 3535 3W LED</a>
               <a className="pd-btn pd-btn-ghost" href="/products/smd-led/2835-0-5w-smd-led">Compare 2835 0.5W</a>
             </div>
           </div>

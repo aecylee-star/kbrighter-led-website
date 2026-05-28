@@ -249,6 +249,7 @@ export default function ProductTemplatePage() {
               <a className="pd-btn pd-btn-ghost" href="#inquiry">Contact Sales Engineer</a>
               <a className="pd-btn pd-btn-ghost" href="/products/smd-led/2835-0-5w-smd-led">Compare 2835 0.5W</a>
               <a className="pd-btn pd-btn-ghost" href="/products/smd-led/3030-smd-led">Review 3030 SMD LED</a>
+              <a className="pd-btn pd-btn-ghost" href="/products/smd-led/3535-smd-led">Review 3535 3W LED</a>
             </div>
           </div>
           <div className="pd-visual-panel">
