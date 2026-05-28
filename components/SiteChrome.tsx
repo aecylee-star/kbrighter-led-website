@@ -127,6 +127,7 @@ export function SiteFooter() {
             ["3030 SMD LED Datasheet", "/products/smd-led/3030-smd-led"],
             ["3535 SMD LED Datasheet", "/products/smd-led/3535-smd-led"],
             ["1414 COB LED Datasheet", "/products/cob-led/1414-cob-led"],
+            ["1919 COB LED Datasheet", "/products/cob-led/1919-cob-led"],
             ["Company Profile", "/download-center"],
             ["Certifications", "/download-center"]
           ]}

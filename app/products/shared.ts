@@ -127,6 +127,13 @@ export const productCategories: ProductCategory[] = [
           "CM14XX mirror-aluminum COB LED series with 13.5 x 13.5 mm substrate, 11 mm LES, 120 degree viewing angle and 7W / 12W / 20W options.",
         href: "/products/cob-led/1414-cob-led",
         specs: ["13.5 x 13.5 x 1.5 mm", "LES 11 mm", "7W / 12W / 20W options"]
+      },
+      {
+        name: "1919 COB LED",
+        description:
+          "CM19XX mirror-aluminum COB LED series with 19 x 19 mm substrate, 16 mm LES, 120 degree viewing angle and 22W / 25W options for higher lumen commercial lighting.",
+        href: "/products/cob-led/1919-cob-led",
+        specs: ["19 x 19 x 1.55 mm", "LES 16 mm", "22W / 25W options"]
       }
     ],
     applications: ["Spotlights", "Downlights", "PAR lamps", "Bulb lamps", "Restaurant lighting", "Outdoor landscape lighting"],
