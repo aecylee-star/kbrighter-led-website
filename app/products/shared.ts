@@ -236,7 +236,8 @@ export const productCategories: ProductCategory[] = [
     advantages: ["Component-to-board coordination", "Soldering and footprint support", "Engineering communication", "Sample-to-production workflow"],
     relatedApplications: [
       { label: "LED for PCB/PCBA Projects", href: "/applications/led-for-pcb-pcba-projects" },
-      { label: "LED for Smart Home", href: "/applications/led-for-smart-home" }
+      { label: "LED for Smart Home", href: "/applications/led-for-smart-home" },
+      { label: "Download PCBA Capability", href: "/download-center" }
     ]
   }
 ];

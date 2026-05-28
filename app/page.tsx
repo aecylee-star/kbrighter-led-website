@@ -73,7 +73,7 @@ export default function Home() {
             <div className="kb-cta-row">
               <a className="kb-btn kb-btn-primary" href="#contact">Request Quotation <ArrowRight size={18} /></a>
               <a className="kb-btn kb-btn-ghost" href="#contact">Request LED Samples</a>
-              <a className="kb-btn kb-btn-ghost" href="#contact">Get Product Datasheet</a>
+              <a className="kb-btn kb-btn-ghost" href="/download-center">Download Catalog</a>
               <a className="kb-btn kb-btn-ghost" href="#contact">Contact Sales Engineer</a>
             </div>
             <div className="kb-proof">
@@ -143,6 +143,7 @@ export default function Home() {
               KINGBRIGHT helps purchasing teams and engineers source suitable LED components,
               request datasheets, arrange samples and discuss PCBA integration with clear technical communication.
             </p>
+            <a className="kb-btn kb-btn-primary" href="/download-center">Download Catalog & Company Profiles <ArrowRight size={18} /></a>
           </div>
           <div className="kb-reason-grid">
             {reasons.map(([title, text, Icon]) => (

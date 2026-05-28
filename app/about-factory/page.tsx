@@ -415,7 +415,7 @@ export default function AboutFactoryPage() {
           <div className="factory-contact-actions">
             <a className="factory-btn factory-btn-primary" href="mailto:sales@kbrighter.com"><Mail size={18} /> Contact Sales Engineer</a>
             <a className="factory-btn factory-btn-dark" href="mailto:sales@kbrighter.com?subject=Request%20LED%20Samples">Request LED Samples</a>
-            <a className="factory-btn factory-btn-dark" href="mailto:sales@kbrighter.com?subject=Request%20Product%20Catalog">Get Product Catalog</a>
+            <a className="factory-btn factory-btn-dark" href="/download-center">Download Company Profile</a>
             <a className="factory-btn factory-btn-dark" href="mailto:sales@kbrighter.com?subject=Request%20Engineering%20Support">Request Engineering Support</a>
           </div>
         </div>

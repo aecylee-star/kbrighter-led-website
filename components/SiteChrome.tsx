@@ -122,6 +122,9 @@ export function SiteFooter() {
           title="Downloads"
           links={[
             ["Download Center", "/download-center"],
+            ["LED Product Catalog", "/downloads/kingbright-led-product-catalog.pdf"],
+            ["LED Company Profile", "/downloads/kingbright-led-company-profile.pdf"],
+            ["PCBA Capability Profile", "/downloads/kingbright-pcba-company-profile.pdf"],
             ["2835 0.2W Datasheet", "/products/smd-led/2835-smd-led"],
             ["2835 0.5W Datasheet", "/products/smd-led/2835-0-5w-smd-led"],
             ["3030 SMD LED Datasheet", "/products/smd-led/3030-smd-led"],
