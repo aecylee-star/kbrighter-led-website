@@ -15,6 +15,7 @@ const productLinks = [
   ["SMD LED", "/products/smd-led"],
   ["Chip LED", "/products/chip-led"],
   ["DIP LED", "/products/dip-led"],
+  ["LED Indicator Arrays", "/products/led-indicator-arrays"],
   ["COB LED", "/products/cob-led"],
   ["High Power LED", "/products/high-power-led"],
   ["Infrared LED", "/products/infrared-led"],

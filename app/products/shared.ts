@@ -23,6 +23,7 @@ export type ProductCategory = {
 
 import { chipProducts } from "./chip-led/data";
 import { dipProducts } from "./dip-led/data";
+import { indicatorProducts } from "./led-indicator-arrays/data";
 
 export const productCategories: ProductCategory[] = [
   {
@@ -141,6 +142,32 @@ export const productCategories: ProductCategory[] = [
       { label: "LED for Industrial Control", href: "/applications/led-for-industrial-control" },
       { label: "LED for Display Systems", href: "/applications/led-for-display-systems" },
       { label: "LED for Automotive Electronics", href: "/applications/led-for-automotive-electronics" }
+    ]
+  },
+  {
+    slug: "led-indicator-arrays",
+    name: "LED Indicator Arrays",
+    eyebrow: "PCB-Mounted LED Indicators",
+    title: "LED Indicator Arrays for Control Panels and Industrial Equipment",
+    description:
+      "KINGBRIGHT LED Indicator Arrays combine multiple 3mm LED positions in black housings for PLC systems, power cabinets, telecommunications equipment, instrumentation and automation status indication.",
+    seoTitle: "LED Indicator Arrays Manufacturer | 3mm Multi-Hole LED Indicators",
+    seoDescription:
+      "KINGBRIGHT LED Indicator Arrays include 3mm one-hole, two-hole, three-hole and four-hole LED indicators for industrial control panels, PLC systems and automation equipment.",
+    products: indicatorProducts.map((product) => ({
+      name: product.name,
+      description: product.description,
+      href: `/products/led-indicator-arrays/${product.slug}`,
+      specs: [product.packageSize, product.channels, product.packaging],
+      image: product.image,
+      imageAlt: product.imageAlt
+    })),
+    applications: ["Industrial control panels", "PLC systems", "Power distribution cabinets", "Telecommunications equipment", "Instrumentation systems", "Automation equipment"],
+    advantages: ["Integrated multi-position housing", "Clear 3mm LED status indication", "Multiple color combinations", "Through-hole PCB mounting", "OEM customization support"],
+    relatedApplications: [
+      { label: "LED for Industrial Control", href: "/applications/led-for-industrial-control" },
+      { label: "LED for PCB/PCBA Projects", href: "/applications/led-for-pcb-pcba-projects" },
+      { label: "LED for Display Systems", href: "/applications/led-for-display-systems" }
     ]
   },
   {
