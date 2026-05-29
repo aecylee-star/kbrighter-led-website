@@ -3,6 +3,8 @@ export type ProductCard = {
   description: string;
   href: string;
   specs: string[];
+  image?: string;
+  imageAlt?: string;
 };
 
 export type ProductCategory = {
@@ -20,6 +22,7 @@ export type ProductCategory = {
 };
 
 import { chipProducts } from "./chip-led/data";
+import { dipProducts } from "./dip-led/data";
 
 export const productCategories: ProductCategory[] = [
   {
@@ -120,20 +123,24 @@ export const productCategories: ProductCategory[] = [
     eyebrow: "Through-Hole LED Components",
     title: "DIP LED Components for Indicators, Displays and Industrial Electronics",
     description:
-      "DIP LEDs are suitable for through-hole assembly, indicator lamps, control panels, signage, display products and electronics requiring strong mechanical mounting.",
-    seoTitle: "DIP LED Manufacturer | Through-Hole LED Components for B2B Buyers",
+      "KINGBRIGHT DIP LED products include 1.8mm, 2mm, 3mm, 5mm, 8mm, 10mm, square-head, RGB, dual-color and long-lead through-hole LEDs for indicators, displays, signage and OEM electronics.",
+    seoTitle: "DIP LED Manufacturer | Through-Hole LED Components and Indicator LEDs",
     seoDescription:
-      "KINGBRIGHT DIP LED category page for overseas buyers, covering through-hole LED components for indicators, displays, industrial control and OEM projects.",
-    products: [
-      { name: "Round DIP LED", description: "Common through-hole LED for indicators, panels and electronics assemblies.", href: "/products/dip-led", specs: ["3mm / 5mm options", "Mono-color", "Through-hole mounting"] },
-      { name: "Oval DIP LED", description: "Directional LED package for signage and display visibility applications.", href: "/products/dip-led", specs: ["Oval lens", "High visibility", "Signal indication"] },
-      { name: "Rectangular DIP LED", description: "Package option for light bars, display indicators and industrial panels.", href: "/products/dip-led", specs: ["Rectangular lens", "Panel indication", "Custom colors"] }
-    ],
-    applications: ["Industrial control", "Signal indicators", "Display systems", "Automotive electronics", "Consumer electronics"],
-    advantages: ["Strong PCB mounting", "Multiple lens shapes", "Long operating life", "Stable indication performance"],
+      "KINGBRIGHT DIP LED catalog for overseas buyers, including 1.8mm, 2mm, 3mm, 5mm, 8mm, 10mm, square, RGB, dual-color and long-lead through-hole LEDs.",
+    products: dipProducts.map((product) => ({
+      name: product.name,
+      description: product.description,
+      href: `/products/dip-led/${product.slug}`,
+      specs: [product.packageSize, product.viewingAngle, product.packaging],
+      image: product.image,
+      imageAlt: product.imageAlt
+    })),
+    applications: ["Industrial control", "Signal indicators", "Display systems", "Automotive electronics", "Consumer electronics", "Signage and panel indicators"],
+    advantages: ["Strong through-hole PCB mounting", "Multiple lens shapes and package sizes", "Mono-color, RGB and dual-color options", "Stable brightness and visible status indication", "OEM lead and color customization support"],
     relatedApplications: [
       { label: "LED for Industrial Control", href: "/applications/led-for-industrial-control" },
-      { label: "LED for Display Systems", href: "/applications/led-for-display-systems" }
+      { label: "LED for Display Systems", href: "/applications/led-for-display-systems" },
+      { label: "LED for Automotive Electronics", href: "/applications/led-for-automotive-electronics" }
     ]
   },
   {
