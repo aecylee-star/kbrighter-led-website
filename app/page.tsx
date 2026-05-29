@@ -19,6 +19,7 @@ import {
 
 const products = [
   ["SMD LED", "Surface-mount LED packages for lighting, display backlight, signage and electronics, including 2835, 3030, 3535 and 5050 formats.", Sparkles, "/products/smd-led"],
+  ["Chip LED", "Miniature front light, side light, mono-color and dual-color chip LEDs for compact PCB indicators and SMT assemblies.", Cpu, "/products/chip-led"],
   ["DIP LED", "Through-hole LED components for indicators, control panels, meters, signage and electronic assemblies.", Layers3, "/products/dip-led"],
   ["High Power LED", "High-output LED components for commercial lighting, industrial illumination and demanding thermal environments.", Zap, "/products/high-power-led"],
   ["Infrared LED", "IR LED solutions for sensing, remote control, security equipment, industrial detection and smart systems.", Gauge, "/products/infrared-led"],
@@ -52,7 +53,7 @@ export default function Home() {
     url: "https://www.kbrighter.com",
     email: "sales@kbrighter.com",
     telephone: "+86-135-3014-4658",
-    makesOffer: ["SMD LED", "DIP LED", "High Power LED", "Infrared LED", "LED Display Components", "PCBA Support"]
+    makesOffer: ["SMD LED", "Chip LED", "DIP LED", "High Power LED", "Infrared LED", "LED Display Components", "PCBA Support"]
   };
 
   return (
@@ -66,7 +67,7 @@ export default function Home() {
             <p className="kb-eyebrow">LED Components Manufacturer</p>
             <h1>LED Components, Display LEDs & PCBA Support for Global Buyers</h1>
             <p className="kb-hero-text">
-              KINGBRIGHT supplies SMD LED, DIP LED, high power LED, infrared LED,
+              KINGBRIGHT supplies SMD LED, Chip LED, DIP LED, high power LED, infrared LED,
               LED display components and PCBA support for lighting manufacturers,
               display system builders, industrial electronics companies and OEM projects.
             </p>

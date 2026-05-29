@@ -7,11 +7,13 @@ import { catalogStyles } from "./styles";
 export const metadata: Metadata = {
   title: "LED Product Catalog | SMD LED, DIP LED, IR LED and PCBA Support",
   description:
-    "KINGBRIGHT LED product catalog for overseas B2B buyers, including SMD LED, DIP LED, high power LED, infrared LED, LED display components and PCBA support.",
+    "KINGBRIGHT LED product catalog for overseas B2B buyers, including SMD LED, Chip LED, DIP LED, COB LED, high power LED, infrared LED, LED display components and PCBA support.",
   keywords: [
     "LED product catalog",
     "SMD LED manufacturer",
+    "Chip LED manufacturer",
     "DIP LED supplier",
+    "COB LED manufacturer",
     "high power LED",
     "infrared LED",
     "LED display components",
@@ -26,7 +28,7 @@ export const metadata: Metadata = {
   }
 };
 
-const categoryIcons = [Sparkles, Lightbulb, Boxes, Zap, Radio, Boxes, CircuitBoard];
+const categoryIcons = [Sparkles, Cpu, Lightbulb, Boxes, Zap, Radio, Boxes, CircuitBoard];
 
 export default function ProductsPage() {
   const schema = {
@@ -35,7 +37,7 @@ export default function ProductsPage() {
     name: "KINGBRIGHT LED Product Catalog",
     url: "https://www.kbrighter.com/products",
     description:
-      "Category-based LED product catalog covering SMD LED, DIP LED, high power LED, infrared LED, LED display components and PCBA support."
+      "Category-based LED product catalog covering SMD LED, Chip LED, DIP LED, COB LED, high power LED, infrared LED, LED display components and PCBA support."
   };
 
   return (
@@ -49,8 +51,8 @@ export default function ProductsPage() {
             <p className="catalog-eyebrow">LED Product Catalog</p>
             <h1>LED Components and PCBA Support Organized by Product Category</h1>
             <p className="catalog-lead">
-              Browse KINGBRIGHT product categories for SMD LED, DIP LED, high power LED,
-              infrared LED, LED display components and LED PCBA support. Each category is
+              Browse KINGBRIGHT product categories for SMD LED, Chip LED, DIP LED, COB LED,
+              high power LED, infrared LED, LED display components and LED PCBA support. Each category is
               structured for overseas buyers, engineers and OEM sourcing teams.
             </p>
             <div className="catalog-cta-row">

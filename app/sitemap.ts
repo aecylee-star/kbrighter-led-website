@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { applications } from "./applications/shared";
+import { chipProducts } from "./products/chip-led/data";
 import { productCategories } from "./products/shared";
 
 const baseUrl = "https://www.kbrighter.com";
@@ -40,6 +41,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.8
+    })),
+    ...chipProducts.map((item) => ({
+      url: `${baseUrl}/products/chip-led/${item.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.72
     }))
   ];
 

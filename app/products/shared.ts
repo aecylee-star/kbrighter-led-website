@@ -19,6 +19,8 @@ export type ProductCategory = {
   relatedApplications: { label: string; href: string }[];
 };
 
+import { chipProducts } from "./chip-led/data";
+
 export const productCategories: ProductCategory[] = [
   {
     slug: "smd-led",
@@ -76,7 +78,7 @@ export const productCategories: ProductCategory[] = [
       {
         name: "1204 Side Light LED",
         description: "Side-emitting SMD LED for compact light guide, indicator, backlight and space-limited PCB designs.",
-        href: "/products/smd-led",
+        href: "/products/chip-led/1204-side-light-led",
         specs: ["Side-emitting design", "Compact package", "Backlight support"]
       }
     ],
@@ -85,6 +87,30 @@ export const productCategories: ProductCategory[] = [
     relatedApplications: [
       { label: "LED for Panel Lights", href: "/applications/led-for-panel-lights" },
       { label: "LED for Tube Lights", href: "/applications/led-for-tube-lights" },
+      { label: "LED for PCB/PCBA Projects", href: "/applications/led-for-pcb-pcba-projects" }
+    ]
+  },
+  {
+    slug: "chip-led",
+    name: "Chip LED",
+    eyebrow: "Miniature Chip LED Components",
+    title: "Chip LED Packages for Compact PCB Indicators and Side-Light Applications",
+    description:
+      "KINGBRIGHT Chip LED products cover ultra-compact front light, side light, mono-color and dual-color SMD packages for high-density PCB indicators, light guides, smart devices and industrial electronics.",
+    seoTitle: "Chip LED Manufacturer | 0201, 0402, 0603, 0805, 1206 SMD Indicator LEDs",
+    seoDescription:
+      "KINGBRIGHT Chip LED category for overseas B2B buyers, including 0201 front light, 0402 mono color, 0602 side light, 0603 front light, 0805, 1204, 1206 and dual-color chip LEDs.",
+    products: chipProducts.map((product) => ({
+      name: product.name,
+      description: product.description,
+      href: `/products/chip-led/${product.slug}`,
+      specs: [product.packageSize, product.current, product.reel]
+    })),
+    applications: ["PCB indicators", "Industrial control panels", "Smart home devices", "Light guide backlight", "Consumer electronics", "Automotive interior electronics"],
+    advantages: ["Ultra-compact SMD packages", "Front-light and side-light options", "Mono-color and dual-color selection", "Tape-and-reel SMT production support"],
+    relatedApplications: [
+      { label: "LED for Industrial Control", href: "/applications/led-for-industrial-control" },
+      { label: "LED for Smart Home", href: "/applications/led-for-smart-home" },
       { label: "LED for PCB/PCBA Projects", href: "/applications/led-for-pcb-pcba-projects" }
     ]
   },

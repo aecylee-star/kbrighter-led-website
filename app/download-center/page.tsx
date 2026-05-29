@@ -31,7 +31,7 @@ const featuredDownloads = [
   {
     title: "KINGBRIGHT LED Product Catalog",
     description:
-      "Product overview for LED components including SMD LED, DIP LED, high power LED, infrared LED, display LED components and related product categories.",
+      "Product overview for LED components including SMD LED, Chip LED, DIP LED, COB LED, high power LED, infrared LED, display LED components and related product categories.",
     href: "/downloads/kingbright-led-product-catalog.pdf",
     cta: "Download Catalog",
     meta: "PDF / Product catalog",
@@ -60,12 +60,12 @@ const featuredDownloads = [
 const sections = [
   {
     title: "Product Catalog",
-    text: "Overview catalog for SMD LED, DIP LED, high power LED, infrared LED, display components and PCBA support.",
+    text: "Overview catalog for SMD LED, Chip LED, DIP LED, COB LED, high power LED, infrared LED, display components and PCBA support.",
     icon: FolderDown
   },
   {
     title: "LED Datasheets",
-    text: "Product-specific datasheets for 2835 0.2W, 2835 0.5W, 3030 SMD LED, 3535 SMD LED, 1414 COB LED, 1919 COB LED, 2828 COB LED and other LED component models.",
+    text: "Product-specific datasheets and specification pages for 2835, 3030, 3535, Chip LED, COB LED and other LED component models.",
     icon: FileText
   },
   {
@@ -151,6 +151,9 @@ export default function DownloadCenterPage() {
             <Link href="/products/smd-led/2835-0-5w-smd-led">2835 0.5W SMD LED Datasheet</Link>
             <Link href="/products/smd-led/3030-smd-led">3030 SMD LED Datasheet</Link>
             <Link href="/products/smd-led/3535-smd-led">3535 SMD LED Datasheet</Link>
+            <Link href="/products/chip-led">Chip LED Specifications</Link>
+            <Link href="/products/chip-led/0201-front-light-led">0201 Front Light LED Specs</Link>
+            <Link href="/products/chip-led/0805-dual-color-led">0805 Dual Color LED Specs</Link>
             <Link href="/products/cob-led/1414-cob-led">1414 COB LED Datasheet</Link>
             <Link href="/products/cob-led/1919-cob-led">1919 COB LED Datasheet</Link>
             <Link href="/products/cob-led/2828-cob-led">2828 COB LED Datasheet</Link>

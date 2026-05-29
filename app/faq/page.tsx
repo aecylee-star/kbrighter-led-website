@@ -6,7 +6,7 @@ import { resourceStyles } from "../resources/styles";
 export const metadata: Metadata = {
   title: "LED Components FAQ | SMD LED, CRI, CCT, OEM/ODM & PCBA Support",
   description:
-    "Professional LED FAQ for overseas buyers and engineers covering SMD LED selection, CRI, color temperature, lifespan, reliability, OEM/ODM, MOQ, lead time, datasheets, export support and PCB/PCBA projects.",
+    "Professional LED FAQ for overseas buyers and engineers covering SMD LED, Chip LED selection, CRI, color temperature, lifespan, reliability, OEM/ODM, MOQ, lead time, datasheets, export support and PCB/PCBA projects.",
   keywords: [
     "LED components FAQ",
     "What is SMD LED",
@@ -17,13 +17,14 @@ export const metadata: Metadata = {
     "LED PCBA support",
     "LED MOQ lead time",
     "SMD LED selection",
+    "Chip LED selection",
     "LED datasheet support",
     "LED reliability testing"
   ],
   openGraph: {
     title: "LED Components FAQ | SMD LED, CRI, CCT, OEM/ODM & PCBA Support",
     description:
-      "Professional LED FAQ for overseas buyers and engineers covering SMD LED selection, CRI, color temperature, lifespan, reliability, OEM/ODM, MOQ, lead time, datasheets, export support and PCB/PCBA projects.",
+      "Professional LED FAQ for overseas buyers and engineers covering SMD LED, Chip LED selection, CRI, color temperature, lifespan, reliability, OEM/ODM, MOQ, lead time, datasheets, export support and PCB/PCBA projects.",
     url: "/faq",
     type: "website"
   }
@@ -31,6 +32,8 @@ export const metadata: Metadata = {
 
 const faqs = [
   ["What is an SMD LED?", "SMD LED means Surface Mount Device LED. It is designed to be mounted directly on a PCB, making it suitable for automated assembly, compact lighting designs, LED modules, indicators, display systems, smart devices and PCBA projects."],
+  ["What is a Chip LED?", "Chip LED usually refers to a miniature SMD LED package used for compact PCB indicators, backlight, light guide and signal applications. Common package styles include front light, side light, mono-color and dual-color versions."],
+  ["How do I choose a Chip LED package size?", "Start with PCB space, viewing direction, target brightness, color, drive current and assembly method. 0201 and 0402 are suitable for very compact electronics, while 0805, 1206 and dual-color packages provide stronger visibility or multi-state indication."],
   ["How should I select the right SMD LED package?", "Start with the application, PCB space, target brightness, operating current, thermal design and viewing angle. Common packages such as 2835, 3528, 5050 and 3030 are chosen for different power levels, optical output and board layouts."],
   ["What information should I provide for an SMD LED RFQ?", "Please provide package size, color or CCT, CRI requirement, forward voltage, operating current, luminous flux or intensity target, viewing angle, application, estimated quantity and any binning or brand requirements. Clear RFQ details help us recommend the correct part faster."],
   ["How do I choose LED color temperature?", "Color temperature depends on the lighting environment and market preference. 2700K-3000K is warm white, 4000K is neutral white, and 5000K-6500K is cool white. Commercial lighting, office lighting, retail display and industrial lighting may each require different CCT choices."],
@@ -110,6 +113,8 @@ export default function FAQPage() {
             <Link href="/products/smd-led/2835-0-5w-smd-led">Review 2835 0.5W SMD LED Specs</Link>
             <Link href="/products/smd-led/3030-smd-led">Review 3030 SMD LED Specs</Link>
             <Link href="/products/smd-led/3535-smd-led">Review 3535 SMD LED Specs</Link>
+            <Link href="/products/chip-led">Review Chip LED Category</Link>
+            <Link href="/products/chip-led/0402-mono-color-led">Review 0402 Chip LED Specs</Link>
             <Link href="/products/cob-led/1414-cob-led">Review 1414 COB LED Specs</Link>
             <Link href="/products/cob-led/1919-cob-led">Review 1919 COB LED Specs</Link>
             <Link href="/products/cob-led/2828-cob-led">Review 2828 COB LED Specs</Link>

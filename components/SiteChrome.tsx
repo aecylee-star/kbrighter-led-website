@@ -13,6 +13,7 @@ const navLinks = [
 
 const productLinks = [
   ["SMD LED", "/products/smd-led"],
+  ["Chip LED", "/products/chip-led"],
   ["DIP LED", "/products/dip-led"],
   ["COB LED", "/products/cob-led"],
   ["High Power LED", "/products/high-power-led"],
