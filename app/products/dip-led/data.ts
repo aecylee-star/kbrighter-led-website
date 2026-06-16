@@ -427,7 +427,7 @@ export const dipProducts: DipLedProduct[] = [
     family: "257 Square DIP LED",
     lensType: "Square full-color lens",
     description: "257mm square full color DIP LED for RGB signal indication, display modules and through-hole multi-color electronics.",
-    file: "257mm-square-full-color-dip-led.jpg",
+    file: "257mm-square-full-color-dip-led-new.png",
     packageSize: "2.0 x 5.0 x 7.0 mm",
     viewingAngle: "60-120 degree",
     packaging: "1000PCS/bag",
