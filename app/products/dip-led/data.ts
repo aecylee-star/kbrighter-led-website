@@ -259,7 +259,7 @@ export const dipProducts: DipLedProduct[] = [
     family: "5mm DIP LED",
     lensType: "Flat head lens",
     description: "5mm flat head DIP LED for broad viewing-angle indication, display panels and lighting products requiring a low-profile lens.",
-    file: "5mm-flat-head-dip-led.webp",
+    file: "5mm-flat-head-dip-led-new.png",
     packageSize: "5.0 x 5.3 mm",
     viewingAngle: "80-160 degree",
     packaging: "1000PCS/bag",
