@@ -441,7 +441,7 @@ export const dipProducts: DipLedProduct[] = [
     family: "257 Square DIP LED",
     lensType: "Square dual-color lens",
     description: "257mm square dual color DIP LED for two-state rectangular indicators, display boards and industrial control electronics.",
-    file: "257mm-square-dual-color-dip-led.jpg",
+    file: "257mm-square-dual-color-dip-led-new.png",
     packageSize: "2.0 x 5.0 x 7.0 mm",
     viewingAngle: "60-120 degree",
     packaging: "1000PCS/Reel",
