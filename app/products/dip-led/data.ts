@@ -245,7 +245,7 @@ export const dipProducts: DipLedProduct[] = [
     family: "5mm DIP LED",
     lensType: "Helmet lens",
     description: "5mm helmet DIP LED for through-hole indicator assemblies requiring a durable lens shape and stable brightness options.",
-    file: "5mm-helmet-dip-led.webp",
+    file: "5mm-helmet-dip-led-new.png",
     packageSize: "4.8 x 4.8 mm",
     viewingAngle: "70-150 degree",
     packaging: "1000PCS/bag",
