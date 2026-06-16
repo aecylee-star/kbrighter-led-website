@@ -455,7 +455,7 @@ export const dipProducts: DipLedProduct[] = [
     family: "Long Lead DIP LED",
     lensType: "Extended lead options",
     description: "Long lead DIP LED series for 3mm, 5mm, 8mm and 10mm through-hole LED assemblies requiring extended leads for special mounting conditions.",
-    file: "long-lead-dip-led-series.jpg",
+    file: "long-lead-dip-led-series-new.png",
     packageSize: "3mm / 5mm / 8mm / 10mm",
     viewingAngle: "70-150 degree",
     packaging: "1000PCS/bag",
