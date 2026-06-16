@@ -287,7 +287,7 @@ export const dipProducts: DipLedProduct[] = [
     family: "5mm DIP LED",
     lensType: "Round RGB lens",
     description: "5mm round RGB DIP LED for full-color through-hole indication, decorative displays and multi-color electronics.",
-    file: "5mm-round-rgb-dip-led.webp",
+    file: "5mm-round-rgb-dip-led-new.png",
     packageSize: "5.0 x 8.7 mm",
     viewingAngle: "10-90 degree",
     packaging: "1000PCS/bag",
