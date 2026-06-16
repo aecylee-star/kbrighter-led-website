@@ -413,7 +413,7 @@ export const dipProducts: DipLedProduct[] = [
     family: "257 Square DIP LED",
     lensType: "Square head lens",
     description: "257mm square head DIP LED for larger rectangular indication windows, PCB indicators and display products.",
-    file: "257mm-square-head-dip-led.jpg",
+    file: "257mm-square-head-dip-led-new.png",
     packageSize: "2.0 x 5.0 x 7.0 mm",
     viewingAngle: "70-150 degree",
     packaging: "1000PCS/bag",
