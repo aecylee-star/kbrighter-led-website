@@ -357,7 +357,7 @@ export const dipProducts: DipLedProduct[] = [
     family: "10mm DIP LED",
     lensType: "Round RGB lens",
     description: "10mm round RGB DIP LED for large full-color indicators, decorative display lights and through-hole signal assemblies.",
-    file: "10mm-round-rgb-dip-led.jpg",
+    file: "10mm-round-rgb-dip-led-new.png",
     packageSize: "10.0 x 13.7 mm",
     viewingAngle: "10-90 degree",
     packaging: "200PCS/bag",
