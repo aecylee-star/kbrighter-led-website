@@ -301,7 +301,7 @@ export const dipProducts: DipLedProduct[] = [
     family: "5mm DIP LED",
     lensType: "Round dual-color lens",
     description: "5mm round dual color DIP LED for bright two-state indication in industrial panels, charging devices and signal display assemblies.",
-    file: "5mm-round-dual-color-dip-led.jpg",
+    file: "5mm-round-dual-color-dip-led-new.png",
     packageSize: "5.0 x 8.7 mm",
     viewingAngle: "10-90 degree",
     packaging: "1000PCS/bag",
