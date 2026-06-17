@@ -343,7 +343,7 @@ export const dipProducts: DipLedProduct[] = [
     family: "10mm DIP LED",
     lensType: "Round head lens",
     description: "10mm round head DIP LED for high-visibility indicators, signal lamps and equipment panels requiring a larger front lens.",
-    file: "10mm-round-head-dip-led.jpg",
+    file: "10mm-round-head-dip-led-new.png",
     packageSize: "5.0 x 8.7 mm",
     viewingAngle: "10-70 degree",
     packaging: "200PCS/bag",
