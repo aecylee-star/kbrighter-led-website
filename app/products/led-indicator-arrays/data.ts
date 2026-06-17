@@ -158,7 +158,7 @@ export const indicatorProducts: IndicatorProduct[] = [
     shortName: "Four Hole Indicator",
     description:
       "Four-position 3mm LED indicator array for dense status indication in automation equipment, cabinet electronics and instrumentation systems.",
-    image: "/images/products/led-indicator-arrays/3mm-four-hole-led-indicator.webp",
+    image: "/images/products/led-indicator-arrays/3mm-four-hole-led-indicator-new.png",
     packageSize: "20.2*4.45*10.5",
     viewingAngle: "10-90 deg",
     packaging: "200PCS/Reel",
