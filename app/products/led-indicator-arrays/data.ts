@@ -130,7 +130,7 @@ export const indicatorProducts: IndicatorProduct[] = [
     shortName: "Two Hole Indicator",
     description:
       "Two-position 3mm LED indicator array for compact multi-status display in PLC equipment, power cabinets and industrial control boards.",
-    image: "/images/products/led-indicator-arrays/3mm-two-hole-led-indicator.webp",
+    image: "/images/products/led-indicator-arrays/3mm-two-hole-led-indicator-new.png",
     packageSize: "9.5*4.45*8.9",
     viewingAngle: "10-90 deg",
     packaging: "1000PCS/bag",
