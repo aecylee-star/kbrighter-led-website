@@ -315,7 +315,7 @@ export const dipProducts: DipLedProduct[] = [
     family: "8mm DIP LED",
     lensType: "Straw hat lens",
     description: "8mm straw hat DIP LED for larger wide-angle indicators, sign lamps and equipment where broader light output is required.",
-    file: "8mm-straw-hat-dip-led.jpg",
+    file: "8mm-straw-hat-dip-led-new.png",
     packageSize: "8.0 x 6.0 mm",
     viewingAngle: "70-150 degree",
     packaging: "500PCS/bag",
