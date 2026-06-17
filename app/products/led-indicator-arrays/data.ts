@@ -144,7 +144,7 @@ export const indicatorProducts: IndicatorProduct[] = [
     shortName: "Three Hole Indicator",
     description:
       "Three-position 3mm LED indicator array for grouped status indication, alarm states and multi-channel equipment feedback.",
-    image: "/images/products/led-indicator-arrays/3mm-three-hole-led-indicator.webp",
+    image: "/images/products/led-indicator-arrays/3mm-three-hole-led-indicator-new.png",
     packageSize: "15.3*4.45*8.9",
     viewingAngle: "10-90 deg",
     packaging: "200PCS/Reel",
