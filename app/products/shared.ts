@@ -109,7 +109,9 @@ export const productCategories: ProductCategory[] = [
       name: product.name,
       description: product.description,
       href: `/products/chip-led/${product.slug}`,
-      specs: [product.packageSize, product.current, product.reel]
+      specs: [product.packageSize, product.current, product.reel],
+      image: product.image,
+      imageAlt: product.imageAlt
     })),
     applications: ["PCB indicators", "Industrial control panels", "Smart home devices", "Light guide backlight", "Consumer electronics", "Automotive interior electronics"],
     advantages: ["Ultra-compact SMD packages", "Front-light and side-light options", "Mono-color and dual-color selection", "Tape-and-reel SMT production support"],

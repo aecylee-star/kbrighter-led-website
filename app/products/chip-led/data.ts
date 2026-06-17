@@ -75,7 +75,7 @@ export const chipProducts: ChipLedProduct[] = [
     lightingType: "Front Light",
     description:
       "Ultra-compact 0201 front-emitting chip LED for high-density PCB indicators, miniature electronics, wearable devices and space-limited SMT assemblies.",
-    image: "/images/products/chip-led/0201-front-light-chip-led.jpg",
+    image: "/images/products/chip-led/0201-front-light-led.png",
     imageAlt: "KINGBRIGHT 0201 front light chip LED specification and product image",
     packageSize: "0.65 x 0.35 x 0.4 mm",
     current: "IF=5mA",
@@ -93,7 +93,7 @@ export const chipProducts: ChipLedProduct[] = [
     lightingType: "Mono Color",
     description:
       "0402 mono-color chip LED for compact indicator lights, control boards, consumer electronics and automated SMT production.",
-    image: "/images/products/chip-led/0402-mono-color-chip-led.jpg",
+    image: "/images/products/chip-led/0402-mono-color-led.png",
     imageAlt: "KINGBRIGHT 0402 mono color chip LED specification and product image",
     packageSize: "1.0 x 0.5 x 0.45 mm",
     current: "IF=5mA",
@@ -111,7 +111,7 @@ export const chipProducts: ChipLedProduct[] = [
     lightingType: "Side Light",
     description:
       "0602 side-emitting chip LED for light guide structures, edge indicators, compact backlight modules and narrow PCB designs.",
-    image: "/images/products/chip-led/0602-side-light-chip-led.jpg",
+    image: "/images/products/chip-led/0602-side-light-led.png",
     imageAlt: "KINGBRIGHT 0602 side light chip LED specification and product image",
     packageSize: "1.6 x 0.6 x 1.0 mm",
     current: "IF=5mA",
@@ -129,7 +129,7 @@ export const chipProducts: ChipLedProduct[] = [
     lightingType: "Front Light",
     description:
       "0603 front light chip LED for general PCB indication, industrial control panels, appliance displays and compact electronic assemblies.",
-    image: "/images/products/chip-led/0603-front-light-chip-led.jpg",
+    image: "/images/products/chip-led/0603-front-light-led.png",
     imageAlt: "KINGBRIGHT 0603 front light chip LED specification and product image",
     packageSize: "1.6 x 0.8 x 0.6/0.4 mm",
     current: "IF=5mA",
@@ -147,7 +147,7 @@ export const chipProducts: ChipLedProduct[] = [
     lightingType: "Side Light",
     description:
       "0802 side-emitting chip LED for compact backlight, edge illumination and guide-light designs requiring a thin side-view LED package.",
-    image: "/images/products/chip-led/0802-side-light-chip-led.jpg",
+    image: "/images/products/chip-led/0802-side-light-led.png",
     imageAlt: "KINGBRIGHT 0802 side light chip LED specification and product image",
     packageSize: "2.1 x 0.6 x 1.0 mm",
     current: "IF=5mA",
@@ -165,7 +165,7 @@ export const chipProducts: ChipLedProduct[] = [
     lightingType: "Front Light",
     description:
       "0805 front-emitting chip LED for brighter PCB indicators, control panels, appliance products and electronic modules.",
-    image: "/images/products/chip-led/0805-front-light-chip-led.png",
+    image: "/images/products/chip-led/0805-front-light-led.png",
     imageAlt: "KINGBRIGHT 0805 front light chip LED specification and product image",
     packageSize: "2.0 x 1.25 x 0.8/1.0 mm",
     current: "IF=5mA",
@@ -183,7 +183,7 @@ export const chipProducts: ChipLedProduct[] = [
     lightingType: "Dual Color",
     description:
       "0805 dual-color chip LED for two-state indication, compact signal modules and PCB designs requiring red/yellow, red/green, red/blue or green/blue output.",
-    image: "/images/products/chip-led/0805-dual-color-chip-led.jpg",
+    image: "/images/products/chip-led/0805-dual-color-led.png",
     imageAlt: "KINGBRIGHT 0805 dual color chip LED specification and product image",
     packageSize: "2.0 x 1.25 x 1.0 mm",
     current: "IF=5mA",
@@ -201,7 +201,7 @@ export const chipProducts: ChipLedProduct[] = [
     lightingType: "Side Light",
     description:
       "1204 side light chip LED for guide-light, backlight and side-view indication applications requiring a larger side-emitting LED package.",
-    image: "/images/products/chip-led/1204-side-light-chip-led.jpg",
+    image: "/images/products/chip-led/1204-side-light-led.png",
     imageAlt: "KINGBRIGHT 1204 side light chip LED specification and product image",
     packageSize: "3.2 x 1.0 x 1.5 mm",
     current: "IF=5mA",
@@ -219,7 +219,7 @@ export const chipProducts: ChipLedProduct[] = [
     lightingType: "Front Light",
     description:
       "1206 front light chip LED for high-visibility PCB indicators, industrial electronics, instrument panels and larger SMT indication designs.",
-    image: "/images/products/chip-led/1206-front-light-chip-led.jpg",
+    image: "/images/products/chip-led/1206-front-light-led.png",
     imageAlt: "KINGBRIGHT 1206 front light chip LED specification and product image",
     packageSize: "3.2 x 1.6 x 0.9 mm",
     current: "IF=5mA",
@@ -237,7 +237,7 @@ export const chipProducts: ChipLedProduct[] = [
     lightingType: "Dual Color",
     description:
       "1209 dual-color chip LED for high-visibility two-color indication in industrial panels, controls, power electronics and signal modules.",
-    image: "/images/products/chip-led/1209-dual-color-chip-led.jpg",
+    image: "/images/products/chip-led/1209-dual-color-led.png",
     imageAlt: "KINGBRIGHT 1209 dual color chip LED specification and product image",
     packageSize: "3.2 x 2.7 x 0.9 mm",
     current: "IF=5mA",
@@ -255,7 +255,7 @@ export const chipProducts: ChipLedProduct[] = [
     lightingType: "Dual Color",
     description:
       "1615 dual-color chip LED for compact two-color signal indication in space-sensitive electronics and SMT assemblies.",
-    image: "/images/products/chip-led/1615-dual-color-chip-led.jpg",
+    image: "/images/products/chip-led/1615-dual-color-led.png",
     imageAlt: "KINGBRIGHT 1615 dual color chip LED specification and product image",
     packageSize: "1.6 x 1.5 x 0.6 mm",
     current: "IF=5mA",
