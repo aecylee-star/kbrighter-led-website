@@ -23,6 +23,7 @@ export type ProductCategory = {
 
 import { chipProducts } from "./chip-led/data";
 import { dipProducts } from "./dip-led/data";
+import { infraredSeries } from "./infrared-led/data";
 import { indicatorProducts } from "./led-indicator-arrays/data";
 
 export const productCategories: ProductCategory[] = [
@@ -244,12 +245,17 @@ export const productCategories: ProductCategory[] = [
     seoDescription:
       "KINGBRIGHT infrared LED components for remote control, sensing, smart home, security electronics and industrial control projects.",
     products: [
-      { name: "850nm IR LED", description: "Infrared LED option for sensing and camera-related applications.", href: "/products/infrared-led", specs: ["850nm wavelength", "SMD / DIP options", "Sensing support"] },
-      { name: "940nm IR LED", description: "Common IR LED wavelength for remote control and consumer electronics.", href: "/products/infrared-led", specs: ["940nm wavelength", "Remote control", "Low visible red glow"] },
-      { name: "IR Receiver / Emitter Support", description: "Project discussion for infrared transmission and receiving applications.", href: "/products/infrared-led", specs: ["Emitter selection", "Viewing angle", "Drive current review"] }
+      ...infraredSeries.map((series) => ({
+        name: series.name,
+        description: series.description,
+        href: `/products/infrared-led/${series.slug}`,
+        specs: [series.packageSummary, series.wavelengthSummary, series.packagingSummary],
+        image: series.image,
+        imageAlt: series.imageAlt
+      }))
     ],
-    applications: ["Smart home", "Remote controls", "Industrial sensing", "Security electronics", "Automotive electronics"],
-    advantages: ["Wavelength selection", "SMD and DIP packages", "Engineering review", "Application matching"],
+    applications: ["Smart home", "Remote controls", "Industrial sensing", "Security electronics", "Optical detection", "Consumer electronics"],
+    advantages: ["Chip, SMD and DIP packages", "Transmitting, receiving and reflective sensor options", "850nm, 940nm and long wavelength selections", "Engineering review and sample support"],
     relatedApplications: [
       { label: "LED for Smart Home", href: "/applications/led-for-smart-home" },
       { label: "LED for Industrial Control", href: "/applications/led-for-industrial-control" }
