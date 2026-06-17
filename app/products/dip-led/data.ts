@@ -329,7 +329,7 @@ export const dipProducts: DipLedProduct[] = [
     family: "10mm DIP LED",
     lensType: "Flat head lens",
     description: "10mm flat head DIP LED for large format indicators, display panels and products needing a broad viewing angle.",
-    file: "10mm-flat-head-dip-led.jpg",
+    file: "10mm-flat-head-dip-led-new.png",
     packageSize: "10.0 x 10.2 mm",
     viewingAngle: "80-160 degree",
     packaging: "200PCS/bag",
