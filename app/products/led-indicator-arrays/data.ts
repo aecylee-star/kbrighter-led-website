@@ -116,7 +116,7 @@ export const indicatorProducts: IndicatorProduct[] = [
     shortName: "One Hole Indicator",
     description:
       "Single-position 3mm LED indicator array with black housing for control panels, equipment status indication and PCB-mounted signal display.",
-    image: "/images/products/led-indicator-arrays/3mm-one-hole-led-indicator.webp",
+    image: "/images/products/led-indicator-arrays/3mm-one-hole-led-indicator-new.png",
     packageSize: "7.5*4.45*6.3",
     viewingAngle: "10-90 deg",
     packaging: "1000PCS/bag",
