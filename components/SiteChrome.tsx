@@ -18,6 +18,7 @@ const productLinks = [
   ["LED Indicator Arrays", "/products/led-indicator-arrays"],
   ["COB LED", "/products/cob-led"],
   ["High Power LED", "/products/high-power-led"],
+  ["UV LED", "/products/uv-led"],
   ["Infrared LED", "/products/infrared-led"],
   ["LED Display Components", "/products/led-display-components"],
   ["PCBA Support", "/products/pcba-support"]
