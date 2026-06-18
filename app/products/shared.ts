@@ -25,6 +25,7 @@ import { chipProducts } from "./chip-led/data";
 import { dipProducts } from "./dip-led/data";
 import { infraredSeries } from "./infrared-led/data";
 import { indicatorProducts } from "./led-indicator-arrays/data";
+import { uvSeriesList } from "./uv-led/data";
 
 export const productCategories: ProductCategory[] = [
   {
@@ -259,6 +260,32 @@ export const productCategories: ProductCategory[] = [
     applications: ["Smart home", "Remote controls", "Industrial sensing", "Security electronics", "Optical detection", "Consumer electronics"],
     advantages: ["Chip, SMD and DIP packages", "Transmitting, receiving and reflective sensor options", "850nm, 940nm and long wavelength selections", "Engineering review and sample support"],
     relatedApplications: [
+      { label: "LED for Smart Home", href: "/applications/led-for-smart-home" },
+      { label: "LED for Industrial Control", href: "/applications/led-for-industrial-control" }
+    ]
+  },
+  {
+    slug: "uv-led",
+    name: "UV LED",
+    eyebrow: "UV LED Components",
+    title: "UV LED Components for Sterilization, Curing and Detection",
+    description:
+      "KINGBRIGHT UV LED products include UVA LED, UVC LED and UVC+UVA dual wavelength packages for sterilization LED modules, UV curing, inspection, water purification, air treatment and OEM electronics.",
+    seoTitle: "UV LED Manufacturer | UVC LED, UVA LED and Sterilization LED Components",
+    seoDescription:
+      "KINGBRIGHT UV LED catalog for overseas B2B buyers, including UVA LED, UVC LED and UVC+UVA sterilization LED series for curing, disinfection and detection applications.",
+    products: uvSeriesList.map((series) => ({
+      name: series.name,
+      description: series.description,
+      href: `/products/uv-led/${series.slug}`,
+      specs: [series.packageSummary, series.wavelengthSummary, series.currentSummary],
+      image: series.heroImage,
+      imageAlt: series.heroImageAlt
+    })),
+    applications: ["UV sterilization", "Water purification", "Air treatment", "UV curing", "Fluorescence detection", "Industrial inspection"],
+    advantages: ["UVA and UVC wavelength options", "Plane and ball-head lens structures", "3535, 5050 and 6868 packages", "Sterilization LED project support", "Sample and RFQ support"],
+    relatedApplications: [
+      { label: "LED for PCB/PCBA Projects", href: "/applications/led-for-pcb-pcba-projects" },
       { label: "LED for Smart Home", href: "/applications/led-for-smart-home" },
       { label: "LED for Industrial Control", href: "/applications/led-for-industrial-control" }
     ]
