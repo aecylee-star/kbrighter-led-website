@@ -20,6 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!category) {
     return {};
   }
+  const previewImage = category.products.find((product) => product.image);
 
   return {
     title: category.seoTitle,
@@ -36,7 +37,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: category.seoTitle,
       description: category.seoDescription,
       url: `/products/${category.slug}`,
-      type: "website"
+      type: "website",
+      images: previewImage?.image ? [{ url: previewImage.image, alt: previewImage.imageAlt ?? category.name }] : undefined
     }
   };
 }

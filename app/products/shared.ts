@@ -43,25 +43,33 @@ export const productCategories: ProductCategory[] = [
         name: "2835 SMD LED",
         description: "0.2W high-efficiency SMD LED package for tube lights, panel lights, sign board backlight and general lighting.",
         href: "/products/smd-led/2835-smd-led",
-        specs: ["2.8 x 3.5 mm", "IF 60mA option", "White and mono-color options"]
+        specs: ["2.8 x 3.5 mm", "IF 60mA option", "White and mono-color options"],
+        image: "/images/products/2835-smd-led/2835-smd-led-product-image.png",
+        imageAlt: "KINGBRIGHT 2835 SMD LED product image"
       },
       {
         name: "2835 0.5W SMD LED",
         description: "Higher lumen 0.5W 2835 SMD LED for lighting replacement, sign board backlight and OEM lighting projects.",
         href: "/products/smd-led/2835-0-5w-smd-led",
-        specs: ["2.8 x 3.5 x 0.70 mm", "IF 150mA", "55-85 lm by CCT/CRI bin"]
+        specs: ["2.8 x 3.5 x 0.70 mm", "IF 150mA", "55-85 lm by CCT/CRI bin"],
+        image: "/images/products/2835-smd-led/2835-smd-led-product-image.png",
+        imageAlt: "KINGBRIGHT 2835 0.5W SMD LED product image"
       },
       {
         name: "3030 SMD LED",
         description: "3030 6V150mA square-cup white SMD LED for high lumen lighting, street lighting, high bay lighting and OEM modules.",
         href: "/products/smd-led/3030-smd-led",
-        specs: ["3.0 x 3.0 x 0.6 mm", "IF 150mA", "105-165 lm by CCT/CRI bin"]
+        specs: ["3.0 x 3.0 x 0.6 mm", "IF 150mA", "105-165 lm by CCT/CRI bin"],
+        image: "/images/products/3030-smd-led/3030-smd-led-product-image.png",
+        imageAlt: "KINGBRIGHT 3030 SMD LED product image"
       },
       {
         name: "3535 SMD LED",
         description: "3535 3W white SMD LED with ceramic package, RA90, 2700K-6500K CCT range and 90 degree beam angle for warm white, pure white and high power lighting.",
         href: "/products/smd-led/3535-smd-led",
-        specs: ["3.5 x 3.5 mm", "Ra90 / 2700K-6500K", "75-185 lm at IF 350mA"]
+        specs: ["3.5 x 3.5 mm", "Ra90 / 2700K-6500K", "75-185 lm at IF 350mA"],
+        image: "/images/products/3535-smd-led/3535-smd-led-product-image.png",
+        imageAlt: "KINGBRIGHT 3535 SMD LED product image"
       },
       {
         name: "3528 SMD LED",
@@ -190,21 +198,27 @@ export const productCategories: ProductCategory[] = [
         description:
           "CM14XX mirror-aluminum COB LED series with 13.5 x 13.5 mm substrate, 11 mm LES, 120 degree viewing angle and 7W / 12W / 20W options.",
         href: "/products/cob-led/1414-cob-led",
-        specs: ["13.5 x 13.5 x 1.5 mm", "LES 11 mm", "7W / 12W / 20W options"]
+        specs: ["13.5 x 13.5 x 1.5 mm", "LES 11 mm", "7W / 12W / 20W options"],
+        image: "/images/products/1414-cob-led/1414-cob-led-product-image.png",
+        imageAlt: "KINGBRIGHT 1414 COB LED product image"
       },
       {
         name: "1919 COB LED",
         description:
           "CM19XX mirror-aluminum COB LED series with 19 x 19 mm substrate, 16 mm LES, 120 degree viewing angle and 22W / 25W options for higher lumen commercial lighting.",
         href: "/products/cob-led/1919-cob-led",
-        specs: ["19 x 19 x 1.55 mm", "LES 16 mm", "22W / 25W options"]
+        specs: ["19 x 19 x 1.55 mm", "LES 16 mm", "22W / 25W options"],
+        image: "/images/products/1919-cob-led/1919-cob-led-product-image.png",
+        imageAlt: "KINGBRIGHT 1919 COB LED product image"
       },
       {
         name: "2828 COB LED",
         description:
           "CM28XX high power mirror-aluminum COB LED series with 28 x 28 mm substrate, 22 mm LES and 50W / 90W options for floodlights, studio lights and outdoor area lighting.",
         href: "/products/cob-led/2828-cob-led",
-        specs: ["28 x 28 x 1.55 mm", "LES 22 mm", "50W / 90W options"]
+        specs: ["28 x 28 x 1.55 mm", "LES 22 mm", "50W / 90W options"],
+        image: "/images/products/2828-cob-led/2828-cob-led-product-image.png",
+        imageAlt: "KINGBRIGHT 2828 COB LED product image"
       }
     ],
     applications: ["Spotlights", "Downlights", "PAR lamps", "Bulb lamps", "Restaurant lighting", "Outdoor landscape lighting"],

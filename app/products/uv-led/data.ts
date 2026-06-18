@@ -97,8 +97,8 @@ export const uvSeriesList: UvSeries[] = [
       "270-280nm UVC LED packages for sterilization LED modules, disinfection equipment, purification products and industrial UV systems.",
     intro:
       "UVC LEDs emit deep ultraviolet light used in sterilization and disinfection applications. The 270-280nm range is widely selected for water purification, air treatment, surface disinfection and hygiene electronics. KINGBRIGHT UVC LED products include 3535, 5050 and 6868 package options with plane and ball-head lens structures for different optical angle and module design requirements.",
-    heroImage: "/images/products/uv-led/3535-uvc-plane.png",
-    heroImageAlt: "KINGBRIGHT 3535 UVC plane sterilization LED product photo",
+    heroImage: "/images/products/uv-led/5050-uvc-plane.png",
+    heroImageAlt: "KINGBRIGHT 5050 UVC plane sterilization LED product photo",
     modelList: ["3535 UVC Plane", "3535 UVC Ball Head", "5050 UVC Plane", "5050 UVC Ball Head", "6868 UVC Plane", "6868 UVC Ball Head"],
     wavelengthSummary: "270-280 nm",
     packageSummary: "3.6*3.6 / 5.0*5.0 / 6.8*6.8",

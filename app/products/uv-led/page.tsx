@@ -10,7 +10,16 @@ export const metadata: Metadata = {
   title: category?.seoTitle ?? "UV LED Manufacturer | KINGBRIGHT",
   description:
     category?.seoDescription ??
-    "KINGBRIGHT UV LED catalog including UVA LED, UVC LED and UVC+UVA sterilization LED components."
+    "KINGBRIGHT UV LED catalog including UVA LED, UVC LED and UVC+UVA sterilization LED components.",
+  openGraph: {
+    title: category?.seoTitle ?? "UV LED Manufacturer | KINGBRIGHT",
+    description:
+      category?.seoDescription ??
+      "KINGBRIGHT UV LED catalog including UVA LED, UVC LED and UVC+UVA sterilization LED components.",
+    url: "/products/uv-led",
+    type: "website",
+    images: [{ url: "/images/products/uv-led/3535-uva-plane.png", alt: "KINGBRIGHT UV LED product image" }]
+  }
 };
 
 export default function UvLedCategoryPage() {

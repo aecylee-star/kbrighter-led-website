@@ -24,7 +24,8 @@ export const metadata: Metadata = {
     description:
       "Browse KINGBRIGHT LED product categories for lighting, display, industrial control, smart home and OEM PCBA projects.",
     url: "/products",
-    type: "website"
+    type: "website",
+    images: [{ url: "/images/products/chip-led/0201-front-light-led.png", alt: "KINGBRIGHT LED product catalog preview" }]
   }
 };
 
@@ -74,9 +75,19 @@ export default function ProductsPage() {
           <div className="catalog-category-grid">
             {productCategories.map((category, index) => {
               const Icon = categoryIcons[index] ?? Sparkles;
+              const previewProduct = category.products.find((product) => product.image);
               return (
                 <Link className="catalog-category-card" href={`/products/${category.slug}`} key={category.slug}>
-                  <Icon size={34} />
+                  {previewProduct?.image ? (
+                    <img
+                      className="catalog-category-image"
+                      src={previewProduct.image}
+                      alt={previewProduct.imageAlt ?? category.name}
+                      loading="lazy"
+                    />
+                  ) : (
+                    <Icon size={34} />
+                  )}
                   <h2>{category.name}</h2>
                   <p>{category.description}</p>
                   <span>Open Category <ArrowRight size={16} /></span>
