@@ -1,4 +1,6 @@
 import type { MetadataRoute } from "next";
+
+export const dynamic = "force-static";
 import { applications } from "./applications/shared";
 import { chipProducts } from "./products/chip-led/data";
 import { dipProducts } from "./products/dip-led/data";
